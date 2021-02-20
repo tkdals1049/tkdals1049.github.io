@@ -1,18 +1,17 @@
 {
   "personalInfo": {
     "myimg": "profilePic.jpg",
-    "fname": "Shubham",
-    "mname": "Parashram",
-    "lname": "Sawant",
-    "nick": "moghya",
+    "fname": "이",
+    "mname": "",
+    "lname": "상민",
+    "nick": "tkdals1049",
     "address": {
       "list": [
-        "Gupta Layout, Mahakali road, Washim, District-Washim, Maharashtra, India 444505 ",
-        "'OM' Jaihind colony, Vishrambag, Sangli District-Sangli, Maharashtra, India 416415"
+        "서울시 종로구 통일로 12길 88-4 301호 "
       ]
     },
-    "email": "sawantshubham571@gmail.com",
-    "mob": "+91 0000 000 000"
+    "email": "tkdals1049@naver.com",
+    "mob": "010 5061 1046"
   },
   "educations": [
     {
