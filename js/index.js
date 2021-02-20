@@ -202,10 +202,9 @@ function loadMoghysSays() {
 	const moghyaSaysInnerHtml = `<div class="col m6">
 		<h6>Recipe for this website:</h6>	
 		<div class="row">
-			이 블로그는 Github Page를 이용해 제작된 블로그 포트폴리오입니다
-			본래 구글이나 티스토리 등에서 블로그를 운영했으나
-			프로그래머로써 툴이 아닌 직접 제작하고 싶어 만들게 되었습니다.
-			코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">here</a>를 참고해주세요.
+			Fork this <a href="https://github.com/moghya/moghya.github.io/">repo</a> on github and edit <a href="https://github.com/moghya/moghya.github.io/blob/master/js/profile.json">js/profile.json</a> for adding your data.
+			<a href="https://medium.com/howcatcancode/developer-profile-template-2017-219f43147efe">Read more</a><br>
+			If you like this website, consider giving a star to its repo <a href="https://github.com/moghya/moghya.github.io/">here</a>.
 		</div>
 	</div>
 	<div class="col m6">
