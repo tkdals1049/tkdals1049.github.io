@@ -154,7 +154,7 @@ object{
 #image img{
 	width: 39.5%;
 	filter: none;
-	border: solid white 3px;
+	border: solid rgb(0, 0, 0) 3px;
 	margin-left: 30.25%;
 	margin-right: 30.25%;
 }

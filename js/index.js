@@ -199,12 +199,12 @@ swal({
 
 
 function loadMoghysSays() {
-	const moghyaSaysInnerHtml = `<div class="col m6">
+	const moghyaSaysInnerHtml = 
+	`<div class="col m6">
 		<h6>Recipe for this website:</h6>	
 		<div class="row">
-			이 블로그는 GitHub Page를 이용해서 직접 제작한 웹사이트 블로그입니다.
-			본래 구글 블로그, 티스토리 등의 블로그를 운영했으나 미리 만들어진 툴을 이용하지 않고
-			프로그래머로써 스스로의 능력으로 제작해보고 싶어서 만들었습니다. 
+			제 포트폴리오는 Github Page를 이용해서 제작해보았습니다. 본래는 구글과 티스토리 등의 여러 블로그를 운영했으나 
+			개발자를 자처하는 사람이 누군가가 만든 툴이 아니라 직접 만들어 보자 생각하게 되었습니다. 
 			코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">여기</a>를 참고해주세요.
 		</div>
 	</div>
@@ -259,10 +259,10 @@ $.get("js/profile.json",
 			cursorChar:"_",
 			loop:true
 		});
-		loadLikes(profile.likes);
+		//loadLikes(profile.likes);
 		$('#helloText').html(profile.helloText);
-		loadLinks(profile.profileLinks);
-		loadSkills(profile.skills);
+		//loadLinks(profile.profileLinks);
+		//loadSkills(profile.skills);
 		loadProjects(profile.projects);
 		loadWorks(profile.experince);
 		loadEducations(profile.educations);
