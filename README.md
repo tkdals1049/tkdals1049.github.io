@@ -1,3 +1,3 @@
-# portfolio
-personal website template for tech guys, feel free to fork and make changes :)
-please read more https://medium.com/howcatcancode/developer-profile-template-2017-219f43147efe
+# 상민이의 게임 개발 블로그
+
+지그재그 왔다갔다 길을 헤매면서도 자신의 길을 찾는 프로그래머의 게임 개발기
