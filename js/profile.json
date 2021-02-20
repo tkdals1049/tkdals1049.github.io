@@ -710,15 +710,11 @@
         "git-api"
       ],
       "shortInfo": "A python app developed for scraping solutions from Sport Programming Websites and uploding them to Github.",
-      "link": "https://github.com/moghya/toGithub"
+      "link": "https://github.com/tkdals1049"
     }
   ],
-<<<<<<< HEAD
-  "summary": "<p>게임이란 가벼운 심심풀이지만 그렇기에 사람들은 그 잠깐의 시간동안 자유로운 한 때를 즐길 수 있고 그 휴식이 있기에 다른 무언가에 충실해질 수 있다고 생각합니다.</p>\n \n<p> 그리고 저는 그 가벼운 심심풀이를 통해 좋은 경험과 즐거운 시간을 선사할 수 있는 게임을 개발자가 되고 싶은 프로그래밍의 원석 이상민이라고 합니다. </p>\n",
-=======
-  "summary": "<p>게임이란 가벼운 심심풀이지만 그렇기에 사람들은 그 잠깐의 시간동안 자유롭고 즐거운 한때를 즐길 수 있고 그 휴식이 있기에 다른 무언가에 충실해질 수 있다고 생각합니다.<\p>\n<p> 그리고 저는 그 가벼운 심심풀이를 통해 좋은 경험과 즐거운 시간을 선사할 수 있는 게임을 개발자가 되고 싶은 프로그래밍의 원석 이상민이라고 합니다. </p>\n",
->>>>>>> 49e93497df3d2e22de01625830aacd48045e36f3
-  "profileLinks": [
+  "summary": "<p>게임이란 가벼운 심심풀이지만 그렇기에 사람들은 그 잠깐의 시간동안 자유로운 한 때를 즐길 수 있고 그 휴식이 있기에 다른 무언가에 충실해질 수 있다고 생각합니다.</p>\n\n<p> 그리고 저는 그 가벼운 심심풀이를 통해 좋은 경험과 즐거운 시간을 선사할 수 있는 게임을 개발자가 되고 싶은 프로그래밍의 원석 이상민이라고 합니다.</p>",
+"profileLinks": [
     {
       "name": "Github",
       "icon": "github.svg",
@@ -728,7 +724,7 @@
     {
       "name": "LinkedIn",
       "icon": "linkedin.svg",
-      "link": "https://www.linkedin.com/in/shubham-sawant-67074a86/",
+      "link": "https://www.linkedin.com/",
       "sn": 1
     },
     {
