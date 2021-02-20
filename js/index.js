@@ -260,10 +260,10 @@ $.get("js/profile.json",
 			cursorChar:"_",
 			loop:true
 		});
-		loadLikes(profile.likes);
+		//loadLikes(profile.likes);
 		$('#helloText').html(profile.helloText);
-		loadLinks(profile.profileLinks);
-		loadSkills(profile.skills);
+		//loadLinks(profile.profileLinks);
+		//loadSkills(profile.skills);
 		loadProjects(profile.projects);
 		loadWorks(profile.experince);
 		loadEducations(profile.educations);
