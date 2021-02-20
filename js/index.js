@@ -200,7 +200,7 @@ swal({
 
 function loadMoghysSays() {
 	const moghyaSaysInnerHtml = `<div class="col m6">
-		<h6>Recipe for 우효 website</h6>	
+		<h6>Recipe for website</h6>	
 		<div class="row">
 			이 블로그는 Github Page를 이용해서 만든 블로그 포트폴리오입니다.
 			기존에 이용하던 블로그는 툴을 이용해 제작한 블로그이기에 삭제하고
