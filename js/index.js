@@ -200,7 +200,7 @@ swal({
 
 function loadMoghysSays() {
 	const moghyaSaysInnerHtml = `<div class="col m6">
-		<h6>Recipe for this website:</h6>	
+		<h6>Recipe for this website</h6>	
 		<div class="row">
 			Would you like to have your own portfolio in this template ? It"s pretty easy, <a href="https://github.com/moghya">moghya</a> covered it up for everyone out their. 
 			All the content on this website is dynamically loaded from JSON data.
