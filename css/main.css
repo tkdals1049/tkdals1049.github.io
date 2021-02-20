@@ -153,7 +153,7 @@ object{
 
 #image img{
 	width: 39.5%;
-	filter: grayscale(1);
+	filter: none;
 	border: solid white 3px;
 	margin-left: 30.25%;
 	margin-right: 30.25%;
@@ -195,7 +195,7 @@ a{
 }
 
 body{
-	background-color: #1f1f1f;
+	background-color: #000000;
 	color: white;
 	font-family: "Lekton", monospace;
 	font-size: 1.15rem;
