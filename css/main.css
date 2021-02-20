@@ -3,12 +3,12 @@ div.content {
 }
 
 .progress {
-	background-color: white;
+	background-color: rgb(218, 10, 10);
 	margin: 25% 0 0 0;
 }
 
 .progress .indeterminate {
-    background-color: #1f1f1f;
+    background-color: #000000;
 }
 
 #name{

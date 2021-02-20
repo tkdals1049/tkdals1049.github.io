@@ -203,10 +203,9 @@ function loadMoghysSays() {
 	`<div class="col m6">
 		<h6>Recipe for this website:</h6>	
 		<div class="row">
-			제 포트폴리오는 Github Page를 이용해서 제작해보았습니다. 본래는 구글과 티스토리 등의 여러 블로그를 운영했으나 본래 있던 툴과 에디터를 이용해서 제작했기에
-			이쁘고 완성도를 쉽게 높일 수 있었지만 개발자를 자처하는 사람이 누군가가 만든 툴을 이용해서 만든다는 것 자체에 부끄러움을 느껴 직접 만들기로 생각하게 되었습니다. 
-			"Hello World"출력부터 시작해 여러 사이트를 보고 직접 적용해보면서 제작해 저만의 작품을 만들고자 하였습니다.
-			모든 기믹은 JSON 데이터를 이용해 움직이는 방식을 사용해서 만들어보았습니다. 코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">여기</a>를 참고해주세요.
+			제 포트폴리오는 Github Page를 이용해서 제작해보았습니다. 본래는 구글과 티스토리 등의 여러 블로그를 운영했으나 
+			개발자를 자처하는 사람이 누군가가 만든 툴을 이용해서 만든다는 것 자체에 부끄러움을 느껴 직접 만들기로 생각하게 되었습니다. 
+			코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">여기</a>를 참고해주세요.
 		</div>
 	</div>
 	<div class="col m6">
