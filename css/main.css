@@ -37,7 +37,7 @@ div.content {
 #links img{	
 	width: 100%;
 	height: 100%;
-	filter: grayscale(1);
+	filter: none;
 	border-radius: 50%;
 }
 
