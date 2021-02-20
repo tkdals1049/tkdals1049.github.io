@@ -261,8 +261,8 @@ $.get("js/profile.json",
 		});
 		loadLikes(profile.likes);
 		$('#helloText').html(profile.helloText);
-		loadLinks(profile.profileLinks);
 		loadSkills(profile.skills);
+		loadLinks(profile.profileLinks);
 		loadProjects(profile.projects);
 		loadWorks(profile.experince);
 		loadEducations(profile.educations);
