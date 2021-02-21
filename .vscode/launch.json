@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/Lee/Documents/Visual%20Studio%202017/Projects/tkdals1049.github.io/index.html",
+            "url": "http://tkdals1049.github.io",
             "webRoot": "${workspaceFolder}"
         }
     ]
