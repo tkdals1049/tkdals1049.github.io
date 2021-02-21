@@ -219,9 +219,6 @@ function(data, status){
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
-	var test = 'Name: '+pInfo.fname+pInfo.lname;
-	test+='Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email;
-	test+=profile.summary;
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.bname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
@@ -237,10 +234,10 @@ function(data, status){
 	`);
 	$('#believe').html('<h4>I 우호</h4><span></span>');
 	const typed = new Typed('#believe span', {
-		strings: test,
+		strings: profile.qoutes,
 		typeSpeed: 40,
 		cursorChar:"_",
-		loop:false
+		loop:true
 	});
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
