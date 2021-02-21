@@ -216,8 +216,8 @@ function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
 	if(status!=="success") {
 		swal({
-				title: "Hello World!!!",
-				text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
+				title: "ERROR!!!",
+				text: "Please Reset your website."
 			})
 	}
 	profile = data;
