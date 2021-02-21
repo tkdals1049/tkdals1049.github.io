@@ -147,10 +147,6 @@ function onWindowResize(){
 $(window).resize(onWindowResize);
 
 var profile;
-swal({
-		title: "Hello World!!!",
-		text: "환영합니다 , you have landed upon little webspace of moghya. I hope you're doing well."
-	});
 //.then((value)=>{
 // 	if(value===true) {
 // 		swal({
@@ -223,6 +219,7 @@ $.get("js/profile.json",
 		}
 		profile = data;
 		var pInfo = profile.personalInfo;
+		$('title').html(pInfo.nick+'|Portfolio');
 		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 		$('#image img').attr('src','img/'+pInfo.myimg);
 		$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
