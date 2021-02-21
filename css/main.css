@@ -8,12 +8,17 @@ div.content {
 }
 
 .progress .indeterminate {
-    background-color: #1f1f1f;
+    background-color: #000000;
+}
+
+#blogname{
+	font-size:  1.5rem;
+	font-weight: bold;
 }
 
 #name{
-	font-size:  2.5rem;
 	font-weight: bold;
+	text-align: center;
 }
 
 .title{
@@ -35,12 +40,13 @@ div.content {
 }
 
 #links img{	
-	width: 100%;
-	height: 100%;
-	filter: grayscale(1);
-	border-radius: 50%;
+	width: 70%;
+	height: 70%;
+	filter: none;
+	border-radius: 100%;
+	margin-left: 425%;
 }
-
+ 
 #links .s2{
 	width: 16%;
 	margin: 2%;
@@ -153,7 +159,7 @@ object{
 
 #image img{
 	width: 39.5%;
-	filter: grayscale(1);
+	filter: none;
 	border: solid white 3px;
 	margin-left: 30.25%;
 	margin-right: 30.25%;
@@ -163,8 +169,8 @@ object{
 	fill: white;
 }
 
-#moghyaSays{
-	border-top: solid white 1px;
+#Says{
+	border-top: solid white 2px;
 	font-size: 1rem;
 	margin-top: 5%
 }
@@ -175,7 +181,7 @@ object{
 }
 
 a{
-	color: green;
+	color: rgb(255, 130, 151);
 }
 .tabs .tab a.active {
 	color: white;
@@ -195,7 +201,7 @@ a{
 }
 
 body{
-	background-color: #1f1f1f;
+	background-color: #000000;
 	color: white;
 	font-family: "Lekton", monospace;
 	font-size: 1.15rem;
@@ -209,19 +215,19 @@ h6 {
 
 .swal-button {
 	color: white;
-	background-color: #1f1f1f;
+	background-color: #000000;
 	box-shadow: none !important;
 	text-align: justify;
 }
 
 button:focus {
 	color: white !important;
-	background-color: #1f1f1f !important;
+	background-color: #000000 !important;
 }
 
 button:hover {
 	color: white !important;
-	background-color: #1f1f1f !important;
+	background-color: #000000 !important;
 }
 
 .swal-button-container {
