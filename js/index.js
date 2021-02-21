@@ -240,7 +240,7 @@ function(data, status){
 		strings: test,
 		typeSpeed: 40,
 		cursorChar:"_",
-		loop:true
+		loop:false
 	});
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
