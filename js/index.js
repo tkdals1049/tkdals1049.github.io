@@ -219,7 +219,7 @@ function(data, status){
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
-	$('title').html(pInfo.nick+'|Portfolio');
+	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.bname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
@@ -232,7 +232,7 @@ function(data, status){
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
-	$('#believe').html('<h4>I believe</h4><span></span>');
+	$('#believe').html('<h4>I 우호</h4><span></span>');
 	const typed = new Typed('#believe span', {
 		strings: profile.qoutes,
 		typeSpeed: 40,
