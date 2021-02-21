@@ -216,14 +216,12 @@ function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
 	if(status!=="success") {
 		swal({
-				title: "ERROR!!!",
-				text: "Please Reset your website."
+				title: "Hello World!!!",
+				text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
 			})
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
-	var profileText='Name: '+pInfo.fname+pInfo.lname+profile.summary;
-	profiletext += 'Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email;
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.bname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
@@ -242,7 +240,7 @@ function(data, status){
 		strings: profile.qoutes,
 		typeSpeed: 40,
 		cursorChar:"_",
-		loop:false
+		loop:true
 	});
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
