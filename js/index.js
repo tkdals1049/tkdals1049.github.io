@@ -215,7 +215,10 @@ $.get("js/profile.json",
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
 	if(status!=="success") {
-		window.location.href = "/error.html";
+		swal({
+				title: "Hello World!!!",
+				text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
+			})
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
