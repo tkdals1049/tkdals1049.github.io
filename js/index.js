@@ -220,8 +220,9 @@ $.get("js/profile.json",
 		profile = data;
 		var pInfo = profile.personalInfo;
 		$('title').html(pInfo.nick+'|Portfolio');
-		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
+		$('#blogname').html(pInfo.bname);
 		$('#image img').attr('src','img/'+pInfo.myimg);
+		$('#name').html(pInfo.fname+pInfo.lname);
 		$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
 		$('#summary').html(profile.summary);
 		$('#tabs').html(`					
