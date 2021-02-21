@@ -239,7 +239,7 @@ function(data, status){
 	`);
 	$('#believe').html('<h4>I 우호</h4><span></span>');
 	const typed = new Typed('#believe span', {
-		strings:profileText,// profile.qoutes,
+		strings: profile.qoutes,
 		typeSpeed: 40,
 		cursorChar:"_",
 		loop:false
