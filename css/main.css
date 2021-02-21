@@ -44,7 +44,7 @@ div.content {
 	height: 50%;
 	filter: none;
 	border-radius: 50%;
-	margin-right: 0%;
+	margin-right: 200%;
 }
  
 #links .s2{
@@ -170,7 +170,7 @@ object{
 }
 
 #Says{
-	border-top: solid white 1px;
+	border-top: solid white 2px;
 	font-size: 1rem;
 	margin-top: 5%
 }
@@ -181,7 +181,7 @@ object{
 }
 
 a{
-	color: green;
+	color: rgb(74, 38, 233);
 }
 .tabs .tab a.active {
 	color: white;
