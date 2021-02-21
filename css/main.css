@@ -16,8 +16,10 @@ div.content {
 	font-weight: bold;
 	text-align: center;
 }
+
 #name{
-	text-align: center;
+	font-size:  2.5rem;
+	font-weight: bold;
 }
 
 .title{
@@ -39,10 +41,10 @@ div.content {
 }
 
 #links img{	
-	width: 50%;
-	height: 50%;
-	filter: none;
-	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
+	border-radius: 50%;
 }
 
 #links .s2{
@@ -157,8 +159,8 @@ object{
 
 #image img{
 	width: 39.5%;
-	filter: none;
-	border: solid rgb(0, 0, 0) 3px;
+	filter: grayscale(1);
+	border: solid white 3px;
 	margin-left: 30.25%;
 	margin-right: 30.25%;
 }
@@ -167,7 +169,7 @@ object{
 	fill: white;
 }
 
-#Says{
+#moghyaSays{
 	border-top: solid white 1px;
 	font-size: 1rem;
 	margin-top: 5%
@@ -179,7 +181,7 @@ object{
 }
 
 a{
-	color: rgb(84, 197, 39);
+	color: green;
 }
 .tabs .tab a.active {
 	color: white;
