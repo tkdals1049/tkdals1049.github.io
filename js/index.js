@@ -223,7 +223,7 @@ function(data, status){
 	$('#blogname').html(pInfo.bname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
-	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>specialty: 버티기 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
+	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary);
 	$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
