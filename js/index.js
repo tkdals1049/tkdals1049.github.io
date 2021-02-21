@@ -210,7 +210,7 @@ function loadMoghysSays() {
 	<div class="col m6">
 		<h6>Warm Gratitudes</h6>
 		<div class="row">
-			<div class="col m3 s3"><a href="https:https://pages.github.com/">Github Pages</a></div>
+			<div class="col m3 s3"><a href="https://pages.github.com/">Github Pages</a></div>
 			<div class="col m3 s3"><a href="https://stackoverflow.com/">Stack Overflow</a></div>
 			<div class="col m3 s3"><a href="https://jquery.com/">jQuery</a></div>
 			<div class="col m3 s3"><a href="http://materializecss.com/">Materialize</a></div>
