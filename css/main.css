@@ -8,7 +8,7 @@ div.content {
 }
 
 .progress .indeterminate {
-    background-color: #1f1f1f;
+    background-color: #000000;
 }
 
 #blogname{
@@ -179,7 +179,7 @@ object{
 }
 
 a{
-	color: green;
+	color: rgb(128, 0, 0);
 }
 .tabs .tab a.active {
 	color: white;
@@ -199,7 +199,7 @@ a{
 }
 
 body{
-	background-color: #1f1f1f;
+	background-color: #000000;
 	color: white;
 	font-family: "Lekton", monospace;
 	font-size: 1.15rem;
@@ -213,19 +213,19 @@ h6 {
 
 .swal-button {
 	color: white;
-	background-color: #1f1f1f;
+	background-color: #000000;
 	box-shadow: none !important;
 	text-align: justify;
 }
 
 button:focus {
 	color: white !important;
-	background-color: #1f1f1f !important;
+	background-color: #000000 !important;
 }
 
 button:hover {
 	color: white !important;
-	background-color: #1f1f1f !important;
+	background-color: #000000 !important;
 }
 
 .swal-button-container {

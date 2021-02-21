@@ -719,31 +719,13 @@
       "name": "Github",
       "icon": "github.svg",
       "link": "https://github.com/tkdals1049",
-      "sn": 2
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "linkedin.svg",
-      "link": "https://www.linkedin.com/",
       "sn": 1
-    },
-    {
-      "name": "Medium",
-      "icon": "medium.svg",
-      "link": "https://medium.com/",
-      "sn": 5
-    },
-    {
-      "name": "StackOverflow",
-      "icon": "stack-overflow.png",
-      "link": "https://stackoverflow.com/",
-      "sn": 3
     },
     {
       "name": "Twitter",
       "icon": "twitter.svg",
       "link": "https://twitter.com/N7yPNFRAAW0OCWT",
-      "sn": 4
+      "sn": 2
     }
   ],
   "likes": [
