@@ -40,12 +40,11 @@ div.content {
 }
 
 #links img{	
-	width: 50%;
+	width: 20%;
 	height: 50%;
 	filter: none;
-	border-radius: 50%;
-	margin: 50%;
-	margin-left: 400%;
+	border-radius: 10%;
+	margin-left: 450%;
 }
  
 #links .s2{
@@ -182,7 +181,7 @@ object{
 }
 
 a{
-	color: rgb(74, 38, 233);
+	color: rgb(173, 154, 255);
 }
 .tabs .tab a.active {
 	color: white;

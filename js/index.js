@@ -222,8 +222,8 @@ function(data, status){
 	$('title').html(pInfo.nick+'|Portfolio');
 	$('#blogname').html(pInfo.bname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
-	$('#name').html(pInfo.fname+pInfo.lname);
-	$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
+	$('#name').html('이름: '+pInfo.fname+pInfo.lname);
+	$('#contact').html('전화번호: '+pInfo.mob+'</br>'+'이메일: '+pInfo.email);
 	$('#summary').html(profile.summary);
 	$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
