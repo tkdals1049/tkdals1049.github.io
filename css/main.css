@@ -44,8 +44,7 @@ div.content {
 	height: 50%;
 	filter: none;
 	border-radius: 50%;
-	margin-left: 150%;
-	margin-right: 150%;
+	margin-right: 0%;
 }
  
 #links .s2{
