@@ -232,9 +232,9 @@ function(data, status){
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
-	$('#believe').html('<h4>Test Text</h4><span></span>');
+	$('#believe').html('<h4>I believe</h4><span></span>');
 	const typed = new Typed('#believe span', {
-		strings: 'Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email,
+		strings: profile.qoutes,
 		typeSpeed: 40,
 		cursorChar:"_",
 		loop:true
