@@ -176,9 +176,9 @@ object{
 }
 
 #Says{
-	border-top: solid white 2px;
+	border-top: solid white 1px;
 	font-size: 1rem;
-	margin-top: 1%
+	margin-top: 5%
 }
 
 .details{
