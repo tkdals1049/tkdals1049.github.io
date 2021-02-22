@@ -196,6 +196,7 @@ function(data, status){
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+'|Portfolio');
+	$('#blogname').html(pInfo.bname);
 	$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
