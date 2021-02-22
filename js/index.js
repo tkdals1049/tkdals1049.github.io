@@ -134,6 +134,8 @@ $('#blog').html(blogHtml);
 
 function onBodyLoad(){
 console.log('body loaded called');
+$('div.progress').css('display','none');
+$('div.content').css('display','block');
 $('.collapsible').collapsible({
 	'accordion' : true
 });
@@ -193,7 +195,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "22 실험 중."});
+	text: "21 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
