@@ -122,7 +122,7 @@ function loadPics(pics){
 	var i;
 	var picsInnerHTML = '';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<img src="img/'+pics[i].icon+'"width="100%">';
+		picsInnerHTML+='<img src="img/'+pics[i].icon+'>';
 	}
 	$('#pics').html(picsInnerHTML);
 	// $('#pics').html('<img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%">');
