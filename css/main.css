@@ -38,9 +38,6 @@ div.content {
 #summary p
 {
 	text-align: center;
-	position: fixed;
-	top:200;
-	left:200;
 }
 
 .row {
@@ -50,10 +47,10 @@ div.content {
 #links img{	
 	width: 50%;
 	height: 50%;
-	filter: none;
+	
 	border-radius: 100%;
 	margin-left: 425%;
-	margin-top: 100%;
+	margin-top: 500%;
 }
  
 #links .s2{
