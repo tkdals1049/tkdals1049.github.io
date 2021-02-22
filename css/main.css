@@ -54,8 +54,8 @@ div.content {
 }
 
 #pics img{	
-	width: 50%;
-	height: 50%;
+	width: 100px;
+	height: 100px;
 	top: 200px;
 	left: 300px;
 }
