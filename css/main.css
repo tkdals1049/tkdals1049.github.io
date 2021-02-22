@@ -38,10 +38,6 @@ div.content {
 #summary p
 {
 	text-align: justify;
-	margin-top: 425%;
-	margin-left: 425%;
-	margin: 25% 0 0 0;
-	margin-bottom:500px;
 }
 
 .row {
@@ -52,9 +48,10 @@ div.content {
 	width: 70%;
 	height: 70%;
 	filter: none;
+	
+	position: fixed; top: 20px; right: 30px;
 	border-radius: 100%;
 	margin-left: 425%;
-	margin-top: 425%;
 }
  
 #links .s2{
