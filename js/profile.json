@@ -1,18 +1,17 @@
 {
   "personalInfo": {
     "myimg": "profilePic.jpg",
-    "fname": "Shubham",
-    "mname": "Parashram",
-    "lname": "Sawant",
-    "nick": "moghya",
+    "bname": "지그의 게임 개발기",
+    "fname": "이",
+    "lname": "상민",
+    "nick": "tkdals1049",
     "address": {
       "list": [
-        "Gupta Layout, Mahakali road, Washim, District-Washim, Maharashtra, India 444505 ",
-        "'OM' Jaihind colony, Vishrambag, Sangli District-Sangli, Maharashtra, India 416415"
+        "서울시 종로구 통일로 12길 88-4 301호 "
       ]
     },
-    "email": "sawantshubham571@gmail.com",
-    "mob": "+91 0000 000 000"
+    "email": "tkdals1049@naver.com",
+    "mob": "010-5061-1046"
   },
   "educations": [
     {
@@ -562,7 +561,7 @@
         "c++"
       ],
       "shortInfo": "Its a ready to use data structures and algorithms c++ template library.Many useful data structures and algorithms are implemented . One should just focus on his/her project necessity and dsalglib will take care of data structures and algorithms.",
-      "link": "http://moghya.me/dsalglib/"
+      "link": "http://tkdals1049.github.io/dsalglib/"
     },
     {
       "sn": 1,
@@ -711,40 +710,22 @@
         "git-api"
       ],
       "shortInfo": "A python app developed for scraping solutions from Sport Programming Websites and uploding them to Github.",
-      "link": "https://github.com/moghya/toGithub"
+      "link": "https://github.com/tkdals1049"
     }
   ],
-  "summary": "<p>Hello, I'm a Computer science enthusiast and B.Tech Information Technology graduate having 2 years of experience as Software Development Engineer in Internet/Ad-Tech industry. As of now I'm involved in developing distributed system software for Storage Management.</p>\n\n<p>I'm passionate about programming and delivering, clean, test-covered, well-designed and scalable code. I seek to learn and try to apply all of it in a way that makes life easier. I always try to design, develop and deliver technology solutions to problems around me.</p>",
-  "profileLinks": [
+  "summary": "<p>게임이란 가벼운 심심풀이지만 그렇기에 사람들은 그 잠깐의 시간동안 자유로운 한 때를 즐길 수 있고 그 휴식이 있기에 다른 무언가에 충실해질 수 있다고 생각합니다.</p>\n\n<p> 그리고 저는 그 가벼운 심심풀이를 통해 좋은 경험과 즐거운 시간을 선사할 수 있는 게임을 개발할 프로그래머의 원석입니다.</p>",
+"profileLinks": [
     {
       "name": "Github",
       "icon": "github.svg",
-      "link": "https://github.com/moghya",
-      "sn": 2
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "linkedin.svg",
-      "link": "https://www.linkedin.com/in/shubham-sawant-67074a86/",
+      "link": "https://github.com/tkdals1049",
       "sn": 1
-    },
-    {
-      "name": "Medium",
-      "icon": "medium.svg",
-      "link": "https://medium.com/howcatcancode",
-      "sn": 5
-    },
-    {
-      "name": "StackOverflow",
-      "icon": "stack-overflow.png",
-      "link": "https://stackoverflow.com/users/5186709/moghya",
-      "sn": 3
     },
     {
       "name": "Twitter",
       "icon": "twitter.svg",
-      "link": "https://twitter.com/moghya",
-      "sn": 4
+      "link": "https://twitter.com/N7yPNFRAAW0OCWT",
+      "sn": 2
     }
   ],
   "likes": [
@@ -806,5 +787,5 @@
     "If you cannot be a pencil to write someone's happiness, then try to be an erases to erase someone's sorrows.",
     "Tabs are better than spaces."
   ],
-  "helloText": "<p>Dear Visitor, Thank you for visiting my webspace.</p>\n<p>I'm working as Member of Technical Staff at <a href='https://cohesity.com'>Cohesity</a></p>\n<p>Before this I used work as Software Development Engineer at <a href='http://media.net'>Media.Net</a>. I completed  B.Tech Information Technology at <a href='http://walchandsangli.ac.in'>Walchand College of Engineering Sangli</a> and my schooling from <a href='http://jnvwashim.gov.in'>Jawahar Navodaya Vidyalaya, Washim</a>.</p>\n\n<p>I'm interested in Algorithms, System Programming, Distributed Systems and Machine Learning. I overwhelmingly like C++, Python and Javascript :)</p>\n\n<p>How can I help you?</br>I can design, develop and deliver technological solutions to your problems.</p><p>Do we have something in common? If yes, let's have a talk about it and grow together.</p> <p> We don't have anything in common?</br>That's fine,please introduce me something that I'm missing.</p>"
+  "helloText": "<p><a>지그</a>의 게임 개발기 블로그에 온 것을 환영합니다. 저는 갈팡질팡 고난을 겪으면서 자신의 길을 찾아가는 게임 개발자 <a>이상민</a>이라고 합니다. </p>\n<p>저는 어렸을 때부터 게임을 좋아하기에 제가 프로그래밍에 적성이 있다는 것을 알았을 때 내가 좋아하는 게임을 스스로 만들 수 있다는 마음에 <a>게임 프로그래머</a>를 목표로 정하게 되었습니다.</p>\n<p>알고리즘, 게임 시스템, 효과 이펙트 등을 볼 때마다 저건 어떤 방식으로 작동하는지 생각하고 재현하는 것이 재미있어 여러 사례를 알아보다보니 자동적으로 C언어,C++,C#,자바부터 언리얼,유니티 등 다양한 환경에서 프로그래밍을 하게되었습니다.</p>\n\n<p>이 많은 일을 할 수 있었던 이유는 저의 가장 큰 장점이자 단점인 <a>고집</a>에 있습니다. 저는 무언가를 정하면 그것을 절대로 포기하지 않았고 그 고집이 열매를 맺어 공모전에 나가 VR작품으로 <a>장관상</a>을 타는 것도 가능했습니다.</p>\n <p> 감히 제가 완벽하다곤 할 수 없습니다. 하지만 부족한 저이기에 지금까지 성장할 수 있었고 앞으로도 끊임없이 배우는게 가능하며 그 결실을 존경하는 선배님과 뜻맞는 동료들과 나누어 모두를 즐겁게 해주는 게임을 개발하는 것이 저의 목표입니다!</p>"
 }
