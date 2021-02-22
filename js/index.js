@@ -202,10 +202,10 @@ function(data, status){
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
-	$('#summary').html('<span class="center-align"></span>');
+	$('#summary').html('<span></span>');
 	var tes= ["Name: "+pInfo.fname+pInfo.lname+"</br> Hobby: 게임 플레이 및 분석 </br> Phone: "
 	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>Introduction:<br/>"+profile.summary2];
-	  const typed2 = new Typed('#summary span', {
+	const typed = new Typed('#summary span', {
 		strings: tes,
 		typeSpeed: 20,
 		cursorChar:"_",
@@ -220,14 +220,15 @@ function(data, status){
 	`);
 	
 	$('#believe').html('<h4>I believe</h4><span></span>');
-	const typed = new Typed('#believe span', {
-		strings: profile.qoutes,
-		typeSpeed: 40,
+	
+	loadLikes(profile.likes);
+	$('#helloText').html('<span></span>');
+	const typed2 = new Typed('#helloText span', {
+		strings: profile.helloText,
+		typeSpeed: 10,
 		cursorChar:"_",
 		loop:false
 	});
-	loadLikes(profile.likes);
-	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);

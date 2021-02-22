@@ -37,6 +37,7 @@ div.content {
 }
 #summary p
 {
+	position: fixed; top: 20px; right: 30px;
 	text-align: justify;
 }
 
@@ -45,12 +46,12 @@ div.content {
 }
 
 #links img{	
-	position: absolute;
 	width: 50%;
 	height: 50%;
+	filter: none;
 	border-radius: 100%;
-	top: 100px;
-	left: 500px;
+	margin-left: 425%;
+	margin-top: 425%;
 }
  
 #links .s2{
