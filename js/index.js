@@ -147,10 +147,10 @@ $('#image img').css('height',$('#image img').css('width'));
 $(window).resize(onWindowResize);
 
 var profile;
-swal({
-	title: "Hello World!!!",
-	text: "실험 중."
-});
+// swal({
+// 	title: "Hello World!!!",
+// 	text: "실험 중."
+// });
 
 
 function loadMoghysSays() {
