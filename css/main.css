@@ -37,7 +37,7 @@ div.content {
 }
 #summary p
 {
-	text-align: justify;
+	text-align: center;
 	position: fixed;
 	top:200;
 	left:200;
