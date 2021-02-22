@@ -194,7 +194,7 @@ function(data, status){
 	}
 	swal({
 		title: "Hello World!!!",
-		text: "01 실험 중."})
+		text: "02 실험 중."})
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
