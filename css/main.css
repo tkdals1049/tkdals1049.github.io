@@ -17,7 +17,6 @@ div.content {
 }
 
 #name{
-	font-weight: bold;
 	text-align: center;
 }
 
@@ -171,7 +170,7 @@ object{
 
 #Says{
 	border-top: solid white 2px;
-	font-size: 1rem;
+	font-size: 2rem;
 	margin-top: 5%
 }
 
