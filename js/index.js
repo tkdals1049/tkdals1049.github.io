@@ -147,14 +147,11 @@ $('#image img').css('height',$('#image img').css('width'));
 $(window).resize(onWindowResize);
 
 var profile;
-// swal({
-// 	title: "Hello World!!!",
-// 	text: "실험 중."
-// });
 
 
-function loadMoghysSays() {
-const moghyaSaysInnerHtml = `<div class="col m6">
+
+function loadSays() {
+const SaysInnerHtml = `<div class="col m6">
 	<h6>Recipe for this website:</h6>	
 	<div class="row">
 	이 블로그는 Github Page를 이용해서 만든 블로그 포트폴리오입니다.
@@ -184,22 +181,26 @@ const moghyaSaysInnerHtml = `<div class="col m6">
 		<div class="col m3 s3"><a href="http://t4t5.github.io/sweetalert/">Sweetalert</a></div>
 	</div>
 </div>`;
-$('#Says').html(moghyaSaysInnerHtml);
+$('#Says').html(SaysInnerHtml);
 }
 
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
-	if(status!=="success") {
-		window.location.href = "/error.html";
+	if(status!=="success") 
+	{
+		swal({
+		title: "Hello World!!!",
+		text: "실험 중."
+	});
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
-	$('title').html(pInfo.nick+'|Portfolio');
+	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.bname);
-	$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 	$('#image img').attr('src','img/'+pInfo.myimg);
-	$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
+	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
+	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary);
 	$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
@@ -222,7 +223,7 @@ function(data, status){
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
 	loadEducations(profile.educations);
-	loadMoghysSays();
+	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
 });
