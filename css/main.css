@@ -43,7 +43,7 @@ div.content {
 #links img{	
 
 	position: fixed;
-	top: 200px;
+	bottom: 200px;
 	width: 30%;
 	height: 30%;
 	
