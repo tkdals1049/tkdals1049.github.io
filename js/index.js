@@ -184,7 +184,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "07 실험 중."});
+	text: "08 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -204,8 +204,8 @@ function(data, status){
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html('<span class="center-align"></span>');
-	var tes= ["Name: "+pInfo.fname+pInfo.lname+"</br> Hobby: 게임 플레이 및 분석 </br> Phone: "
-	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>Introduction:<br/>"+profile.summary2];
+	var tes= ["<summary>Name: "+pInfo.fname+pInfo.lname+"</br> Hobby: 게임 플레이 및 분석 </br> Phone: "
+	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>Introduction:<br/>"+profile.summary2+"</summary>"];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
 		typeSpeed: 40,
