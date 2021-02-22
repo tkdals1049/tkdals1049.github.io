@@ -204,7 +204,7 @@ function(data, status){
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary+'<span></span>');
 	const typed2 = new Typed('#summary span', {
-		strings: profile.qoutes,
+		strings: profile.summary,
 		typeSpeed: 40,
 		cursorChar:"_",
 		loop:false
