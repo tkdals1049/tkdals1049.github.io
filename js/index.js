@@ -119,10 +119,10 @@ function loadPics(pics){
 	pics = pics.sort(function(a,b){
 		return a.sn-b.sn;
 	});
-	var i;
+	
 	var picsInnerHTML = '';
-	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<img src="img/'+pics[i].icon+'>';
+	for(var i=0;i<pics.length;i++){
+		picsInnerHTML+='<img src="img/'+pics[i].icon+'">';
 	}
 	$('#pics').html(picsInnerHTML);
 	// $('#pics').html('<img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%">');
