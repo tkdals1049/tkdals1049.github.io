@@ -202,7 +202,12 @@ function(data, status){
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary);
-	$('#tabs').html(`					
+	const typed2 = new Typed('#summary span', {
+		strings: profile.summary,
+		typeSpeed: 40,
+		cursorChar:"_",
+		loop:false
+	});$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
