@@ -37,15 +37,15 @@ div.content {
 }
 #summary p
 {
-	text-align: center;
+	text-align: justify;
 	margin-top: 425%;
 	margin-left: 425%;
 }
 #summary2
 {
 	text-align: center;
-	margin-top: 425%;
-	margin-left: 425%;
+	margin: 25% 0 0 0;
+	margin-bottom:500px;
 }
 
 .row {
