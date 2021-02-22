@@ -41,8 +41,8 @@ div.content {
 }
 
 #links img{	
-	position: pixed;
-	top: 500;
+	position: absolute;
+	top: 500px;
 	width: 50%;
 	height: 50%;
 }
