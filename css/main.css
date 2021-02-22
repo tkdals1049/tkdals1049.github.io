@@ -12,7 +12,7 @@ div.content {
 }
 
 #blogname{
-	font-size:  1.0rem;
+	font-size:  1.8rem;
 	font-weight: bold;
 }
 
@@ -41,8 +41,8 @@ div.content {
 }
 
 #links img{	
-	position: absolute;
-	margin-top: 200px;
+	position:fixed;
+	top:0px;
 	width: 50px;
 	height: 50px;
 }
