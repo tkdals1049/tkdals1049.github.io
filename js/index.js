@@ -95,7 +95,7 @@ var profileLinksInnerHTML = '';
 while(i<profileLinks.length){
 	profileLinksInnerHTML+='<div class="row">'
 	for(j=i;j<profileLinks.length&&j<i+5;j++){
-		profileLinksInnerHTML+='<div class="col s2">													<a href="'+profileLinks[j].link+'" target="_blank" >					<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">															</a></div>';
+		profileLinksInnerHTML+='<div class="col s2"><a href="'+profileLinks[j].link+'" target="_blank" ><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></a></div>';
 	}
 	profileLinksInnerHTML+='</div>';
 	i=j;
@@ -242,7 +242,7 @@ function(data, status){
 	loadLinks(profile.profileLinks);
 	//loadPics(profile.pics);
 	
-	$('#pics').html('<object type="image/jpg+png" data="img/pic1.jpg">programming</object>');
+	$('#pics').html('<img type="image/jpg+png" data="img/pic1.jpg">programming</object>');
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
