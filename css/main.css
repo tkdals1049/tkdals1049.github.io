@@ -31,9 +31,14 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p,#summary p
+#hello p
 {
 	text-align: justify;
+}
+#summary p
+{
+	text-align: justify;
+	margin-bottom: 425%;
 }
 
 .row {
