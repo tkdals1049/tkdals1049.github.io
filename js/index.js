@@ -149,7 +149,7 @@ $(window).resize(onWindowResize);
 var profile;
 swal({
 		title: "Hello World!!!",
-		text: "01번째 실험."
+		text: "02번째 실험."
 });
 //.then((value)=>{
 // 	if(value===true) {
