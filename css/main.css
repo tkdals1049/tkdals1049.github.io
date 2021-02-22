@@ -175,7 +175,7 @@ object{
 }
 
 a{
-	color: green;
+	color: rgb(255, 147, 147);
 }
 .tabs .tab a.active {
 	color: white;
