@@ -204,11 +204,7 @@ function(data, status){
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary+'<span></span>');
 	var tes= [
-		"Your death is something that happens to everyone else.",
-		"You only live as long as the last person who remembers you.",
-		"Every day every hour turn the pain into power.",
-		"If you cannot be a pencil to write someone's happiness, then try to be an erases to erase someone's sorrows.",
-		"Tabs are better than spaces."
+		"Your death is something that happens to everyone else."
 	  ];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
