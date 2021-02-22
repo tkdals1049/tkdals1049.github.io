@@ -37,7 +37,7 @@ div.content {
 }
 #summary p
 {
-	position: fixed; top: 20px; right: 30px;
+	position: fixed;
 	text-align: justify;
 }
 
@@ -51,7 +51,7 @@ div.content {
 	filter: none;
 	border-radius: 100%;
 	margin-left: 425%;
-	margin-top: 425%;
+	margin-top: 500%;
 }
  
 #links .s2{
