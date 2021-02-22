@@ -723,24 +723,6 @@
       "sn": 1
     },
     {
-      "name": "LinkedIn",
-      "icon": "linkedin.svg",
-      "link": "https://www.linkedin.com/in/shubham-sawant-67074a86/",
-      "sn": 4
-    },
-    {
-      "name": "Medium",
-      "icon": "medium.svg",
-      "link": "https://medium.com/howcatcancode",
-      "sn": 5
-    },
-    {
-      "name": "StackOverflow",
-      "icon": "stack-overflow.png",
-      "link": "https://stackoverflow.com/users/5186709/moghya",
-      "sn": 3
-    },
-    {
       "name": "Twitter",
       "icon": "twitter.svg",
       "link": "https://twitter.com/N7yPNFRAAW0OCWT",
