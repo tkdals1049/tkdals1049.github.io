@@ -41,10 +41,13 @@ div.content {
 }
 
 #links img{	
+
 	width: 50%;
 	height: 50%;
+	position: fixed;
 	top: 200px;
 	left: 300px;
+	
 }
  
 #links .s2{
