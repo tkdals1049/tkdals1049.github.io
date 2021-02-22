@@ -242,7 +242,7 @@ function(data, status){
 	loadLinks(profile.profileLinks);
 	//loadPics(profile.pics);
 	
-	$('#pics').html('<img type="image/jpg+png" data="img/pic1.jpg">programming</object>');
+	$('#pics').html('<img src="img/pic1.jpg">programming');
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
