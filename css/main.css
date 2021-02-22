@@ -31,11 +31,7 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p
-{
-	text-align: justify;
-}
-#summary p
+#hello p,#summary p
 {
 	text-align: justify;
 }
@@ -45,10 +41,11 @@ div.content {
 }
 
 #links img{	
+	width: 10px;
+	height: 10px;
 	position:fixed;
-	width: 50%;
-	height: 50%;
-	border-radius: 100%;
+	width: 10%;
+	height: 10%;
 }
  
 #links .s2{
