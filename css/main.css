@@ -40,12 +40,12 @@ div.content {
 	text-align: justify;
 	margin-top: 425%;
 	margin-left: 425%;
+	margin: 25% 0 0 0;
+	margin-bottom:500px;
 }
 #summary2
 {
 	text-align: center;
-	margin: 25% 0 0 0;
-	margin-bottom:500px;
 }
 
 .row {
