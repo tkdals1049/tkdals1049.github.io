@@ -214,7 +214,7 @@ function(data, status){
 		strings: profile.qoutes,
 		typeSpeed: 40,
 		cursorChar:"_",
-		loop:true
+		loop:false
 	});
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
