@@ -11,8 +11,12 @@ div.content {
     background-color: #1f1f1f;
 }
 
-#name{
+#bname{
 	font-size:  2.5rem;
+	font-weight: bold;
+}
+
+#name{
 	font-weight: bold;
 }
 
@@ -37,7 +41,7 @@ div.content {
 #links img{	
 	width: 100%;
 	height: 100%;
-	filter: grayscale(1);
+	filter: none;
 	border-radius: 50%;
 }
 
@@ -163,9 +167,9 @@ object{
 	fill: white;
 }
 
-#moghyaSays{
+#Says{
 	border-top: solid white 1px;
-	font-size: 1rem;
+	font-size: 2rem;
 	margin-top: 5%
 }
 
@@ -175,7 +179,7 @@ object{
 }
 
 a{
-	color: green;
+	color: rgb(245, 139, 139);
 }
 .tabs .tab a.active {
 	color: white;

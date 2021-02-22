@@ -184,7 +184,7 @@ const moghyaSaysInnerHtml = `<div class="col m6">
 		<div class="col m3 s3"><a href="http://t4t5.github.io/sweetalert/">Sweetalert</a></div>
 	</div>
 </div>`;
-$('#moghyaSays').html(moghyaSaysInnerHtml);
+$('#Says').html(moghyaSaysInnerHtml);
 }
 
 $.get("js/profile.json", 
