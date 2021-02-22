@@ -41,9 +41,8 @@ div.content {
 }
 
 #links img{	
-	position: absolute;
-	top:450px;
-	margin-left:200px;
+	position: fixed;
+	margin-top:200px;
 	width: 30%;
 	height: 30%;
 }
