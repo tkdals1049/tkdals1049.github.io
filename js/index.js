@@ -183,7 +183,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "12 실험 중."});
+	text: "13 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -203,7 +203,7 @@ function(data, status){
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Name: '+pInfo.fname+pInfo.lname+'</br>Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html('<span></span>');
-	var tes= ["<p></br></br>Introduction:<br/>"+profile.summary2+"</p>"];
+	var tes= ["<p>Introduction:<br/>"+profile.summary2+"</p>"];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
 		typeSpeed: 20,
