@@ -42,7 +42,7 @@ div.content {
 
 #links img{	
 	position: pixed;
-	margin-top:200px;
+	top: 500;
 	width: 30%;
 	height: 30%;
 }
