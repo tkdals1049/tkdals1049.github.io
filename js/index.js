@@ -115,6 +115,18 @@ for(i=0;i<likes.length;i++){
 $('#likes').html(likesInnerHTML);
 }
 
+function loadPics(pics){
+	pics = pics.sort(function(a,b){
+		return a.sn-b.sn;
+	});
+	var i;
+	var picsInnerHTML = '<h4>I like</h4>';
+	for(i=0;i<pics.length;i++){
+		picsInnerHTML+='<object type="image/svg+xml" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>'
+	}
+	$('#pics').html(picsInnerHTML);
+}
+
 function loadBlog() {
 var blogHtml = `<div class='sk-ww-medium-publication-feed' data-embed-id='26322'></div><script src='https://www.sociablekit.com/app/embed/medium-publication-feed/widget.js'></script>`;
 $('#blog').html(blogHtml);	

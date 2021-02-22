@@ -52,6 +52,18 @@ div.content {
 	margin: 2%;
 }
 
+#pics img{	
+	width: 50%;
+	height: 50%;
+	top: 200px;
+	left: 300px;
+}
+ 
+#pics .s2{
+	width: 16%;
+	margin: 2%;
+}
+
 .section{
 	padding-top: 0;
 	padding-bottom: 0.5rem;
