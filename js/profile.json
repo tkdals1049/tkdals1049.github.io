@@ -730,6 +730,27 @@
       "sn": 2
     }
   ],
+  "Pics": [
+    {
+      "name": "pic1",
+      "icon": "pic1.jpg",
+      "sn": 1
+    },
+    {
+      "name": "pic2",
+      "icon": "pic2.jpg",
+      "sn": 2
+    },
+    {
+      "name": "pic3",
+      "icon": "pic3.jpg",
+      "sn": 3
+    },
+    {
+      "name": "pic4",
+      "icon": "pic4.jpg",
+      "sn": 4
+    }],
   "likes": [
     {
       "name": "Programming",
