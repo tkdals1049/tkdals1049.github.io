@@ -211,7 +211,7 @@ function(data, status){
 	`);
 	$('#believe').html('<h4>I believe</h4><span></span>');
 	const typed = new Typed('#believe span', {
-		strings: profile.qoutes,
+		strings: "test",
 		typeSpeed: 40,
 		cursorChar:"_",
 		loop:false
