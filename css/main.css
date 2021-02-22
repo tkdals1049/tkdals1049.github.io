@@ -37,7 +37,7 @@ div.content {
 }
 #summary p
 {
-	text-align: center;
+	text-align: justify;
 }
 
 .row {
@@ -48,7 +48,6 @@ div.content {
 	position:absolute  ;
 	width: 50%;
 	height: 50%;
-	
 	border-radius: 100%;
 }
  
