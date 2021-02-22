@@ -45,7 +45,7 @@ div.content {
 }
 
 #links img{	
-	position:inherit ;
+	position:absolute  ;
 	width: 50%;
 	height: 50%;
 	
