@@ -45,12 +45,11 @@ div.content {
 }
 
 #links img{	
+	position:fixed;
 	width: 50%;
 	height: 50%;
 	
 	border-radius: 100%;
-	margin-left: 425%;
-	margin-top: 500%;
 }
  
 #links .s2{
