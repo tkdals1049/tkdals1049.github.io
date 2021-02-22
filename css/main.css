@@ -32,7 +32,7 @@ div.content {
 }
 
 #hello p,#summary p{
-	text-align: justify;
+	text-align: center;
 }
 
 .row {
@@ -45,6 +45,7 @@ div.content {
 	filter: none;
 	border-radius: 100%;
 	margin-left: 425%;
+	margin-bottom: 425%;
 }
  
 #links .s2{
