@@ -195,7 +195,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "24 실험 중."});
+	text: "25 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -211,7 +211,7 @@ function(data, status){
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.mname);
-	$('#image img').attr('src','img/'+'pic1.jpg');
+	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('</br>Name: '+pInfo.fname+pInfo.lname+'</br>Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html('<span></span>');
@@ -241,6 +241,8 @@ function(data, status){
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	//loadPics(profile.pics);
+	
+	$('#pics').html('<h4>My Pic</h4>'+'<object type="image/svg+xml" data="img/programming.svg">programming</object>');
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
