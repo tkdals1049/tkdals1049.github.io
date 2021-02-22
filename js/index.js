@@ -133,7 +133,7 @@ onWindowResize();
 
 function onWindowResize(){
 const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
+const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
 // console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 if (tabs && tabs[0]) {
@@ -208,7 +208,7 @@ function(data, status){
 	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>Introduction:<br/>"+profile.summary2];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
-		typeSpeed: 40,
+		typeSpeed: 80,
 		cursorChar:"_",
 		loop:false
 	});
