@@ -82,6 +82,7 @@ div.content {
 
 .type.col.m4{
 	min-height: 200px;
+	min-width: 200px;
 }
 
 .row.project,.row.education,.row.work{
