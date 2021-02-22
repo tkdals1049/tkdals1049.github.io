@@ -42,8 +42,8 @@ div.content {
 
 #links img{	
 
-	position: fixed;
-	margin-bottom:200px;
+	position: absolute;
+	top:200px;
 	width: 30%;
 	height: 30%;
 	
