@@ -148,8 +148,6 @@ $(window).resize(onWindowResize);
 
 var profile;
 
-
-
 function loadSays() {
 const SaysInnerHtml = `<div class="col m6">
 	<h6>Recipe for this website:</h6>	
@@ -194,6 +192,9 @@ function(data, status){
 		text: "실험 중."
 	});
 	}
+	swal({
+		title: "Hello World!!!",
+		text: "01 실험 중."})
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
@@ -201,9 +202,13 @@ function(data, status){
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
-	$('#summary').html(profile.summary);
-	
-	$('#tabs').html(`					
+	$('#summary').html(profile.summary+'<span></span>');
+	const typed2 = new Typed('#summary span', {
+		strings: profile.qoutes,
+		typeSpeed: 40,
+		cursorChar:"_",
+		loop:false
+	});$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
