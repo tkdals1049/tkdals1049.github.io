@@ -203,8 +203,15 @@ function(data, status){
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html(profile.summary+'<span></span>');
-	const typed2 = new Typed('#summary span', {
-		strings: profile.qoutes,
+	var tes= [
+		"Your death is something that happens to everyone else.",
+		"You only live as long as the last person who remembers you.",
+		"Every day every hour turn the pain into power.",
+		"If you cannot be a pencil to write someone's happiness, then try to be an erases to erase someone's sorrows.",
+		"Tabs are better than spaces."
+	  ];
+	  const typed2 = new Typed('#summary span', {
+		strings: tes,
 		typeSpeed: 40,
 		cursorChar:"_",
 		loop:false
@@ -216,6 +223,7 @@ function(data, status){
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
+	
 	$('#believe').html('<h4>I believe</h4><span></span>');
 	const typed = new Typed('#believe span', {
 		strings: profile.qoutes,
