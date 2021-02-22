@@ -46,10 +46,9 @@ div.content {
 
 #links img{	
 
-	position: fixed; top: 200px; right: 300px;
-	width: 70%;
-	height: 70%;
-	filter: none;
+	position: fixed;
+	width: 10%;
+	height: 10%;
 	border-radius: 100%;
 }
  
