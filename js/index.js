@@ -182,6 +182,10 @@ const SaysInnerHtml = `<div class="col m6">
 $('#Says').html(SaysInnerHtml);
 }
 
+swal({
+	title: "Hello World!!!",
+	text: "06 실험 중."});
+	
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
@@ -192,9 +196,6 @@ function(data, status){
 		text: "실험 중."
 	});
 	}
-	swal({
-		title: "Hello World!!!",
-		text: "06 실험 중."});
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
