@@ -31,13 +31,9 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p
+#hello p,#summary p
 {
 	text-align: justify;
-}
-#summary p
-{
-	text-align: center;
 }
 
 .row {
