@@ -132,17 +132,16 @@ onWindowResize();
 }
 
 function onWindowResize(){
-const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
-// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
-const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-if (tabs && tabs[0]) {
-	tabs[0].style.height = tabContentHeight;
+	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
+	const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
+	// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	if (tabs && tabs[0]) {
+		tabs[0].style.height = tabContentHeight;
+	}
+	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
+	$('#image img').css('height',$('#image img').css('width'));
 }
-$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-$('#image img').css('height',$('#image img').css('width'));
-}
-
 
 $(window).resize(onWindowResize);
 
@@ -208,7 +207,7 @@ function(data, status){
 	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>Introduction:<br/>"+profile.summary2];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
-		typeSpeed: 80,
+		typeSpeed: 20,
 		cursorChar:"_",
 		loop:false
 	});
