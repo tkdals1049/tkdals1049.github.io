@@ -37,6 +37,8 @@ div.content {
 }
 #summary p
 {
+	height: 200px;
+	width: 200px;
 	position: fixed;
 	text-align: justify;
 }
