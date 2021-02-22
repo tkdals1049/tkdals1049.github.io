@@ -197,7 +197,7 @@ function(data, status){
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
-	$('#blogname').html(pInfo.bname);
+	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);

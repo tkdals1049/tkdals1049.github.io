@@ -1,13 +1,14 @@
 {
   "personalInfo": {
     "myimg": "profilePic.jpg",
-    "bname": "지그의 게임 개발기",
     "fname": "이",
+    "mname": "지그의 게임 개발기",
     "lname": "상민",
     "nick": "tkdals1049",
     "address": {
       "list": [
-        "서울시 종로구 통일로 12길 88-4 301호 "
+        "서울시 종로구 통일로 12길 88-4 301호 ",
+        ""
       ]
     },
     "email": "tkdals1049@naver.com",
