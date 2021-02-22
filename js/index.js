@@ -194,7 +194,7 @@ function(data, status){
 	}
 	swal({
 		title: "Hello World!!!",
-		text: "05 실험 중."});
+		text: "06 실험 중."});
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
@@ -204,8 +204,7 @@ function(data, status){
 	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html('<span class="center-align"></span>');
 	var tes= ["Name: "+pInfo.fname+pInfo.lname+"</br> Hobby: 게임 플레이 및 분석 </br> Phone: "
-	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>"+profile.summary2
-	  ];
+	+pInfo.mob+"</br> E-Mail: "+pInfo.email+"</br></br>"+profile.summary2];
 	  const typed2 = new Typed('#summary span', {
 		strings: tes,
 		typeSpeed: 40,
