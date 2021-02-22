@@ -31,7 +31,11 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p,#summary p{
+#hello p
+{
+	text-align: justify;
+}
+#summary p{
 	text-align: center;
 }
 
@@ -45,7 +49,6 @@ div.content {
 	filter: none;
 	border-radius: 100%;
 	margin-left: 425%;
-	margin-bottom: 425%;
 }
  
 #links .s2{
