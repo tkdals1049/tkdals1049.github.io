@@ -44,8 +44,7 @@ div.content {
 	width: 10px;
 	height: 10px;
 	position:fixed;
-	width: 10%;
-	height: 10%;
+	top: 200px; right: 300px;
 }
  
 #links .s2{
