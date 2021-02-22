@@ -53,10 +53,8 @@ div.content {
 } 
 
 #pics img{	
-	width: 100px;
-	height: 100px;
-	top: 200px;
-	left: 300px;
+	width: 600px;
+	height: 400px;
 }
  
 #pics .s2{

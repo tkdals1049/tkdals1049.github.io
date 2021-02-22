@@ -120,11 +120,12 @@ function loadPics(pics){
 		return a.sn-b.sn;
 	});
 	var i;
-	var picsInnerHTML = '<h4>I like</h4>';
+	var picsInnerHTML = '';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<object type="image/svg+xml" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>'
+		picsInnerHTML+='<img src="img/'+pics[i].icon+'"width="100%">';
 	}
 	$('#pics').html(picsInnerHTML);
+	// $('#pics').html('<img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%">');
 }
 
 function loadBlog() {
@@ -240,9 +241,7 @@ function(data, status){
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
-	//loadPics(profile.pics);
-	
-	$('#pics').html('<img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%">');
+	loadPics(profile.pics);
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
