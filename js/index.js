@@ -134,10 +134,10 @@ onWindowResize();
 function onWindowResize(){
 const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
 const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
-// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 if (tabs && tabs[0]) {
-	tabs[0].style.height = tabContentHeight;
+	tabs[0].style.height = 500;
 }
 $('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 $('#image img').css('height',$('#image img').css('width'));
