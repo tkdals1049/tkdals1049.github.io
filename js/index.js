@@ -131,7 +131,7 @@ onWindowResize();
 
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-	const tabContentHeight = '1000px';//Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
+	const tabContentHeight = Math.max(heightPageA+100,(window.innerHeight - 50)) + 'px';
 	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
@@ -227,7 +227,7 @@ function(data, status){
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	//loadPics(profile.pics);
-	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"><img src="img/pic1.jpg"><img src="img/pic1.jpg">');
+	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
 
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
