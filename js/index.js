@@ -241,7 +241,7 @@ function(data, status){
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
-	loadPics(profile.pics);
+	//loadPics(profile.pics);
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
