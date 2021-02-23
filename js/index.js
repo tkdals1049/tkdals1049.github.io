@@ -137,7 +137,7 @@ const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'p
 console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 if (tabs && tabs[0]) {
-	tabs[0].style.height = 500;
+	tabs[0].style.height = 1000;
 }
 $('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 $('#image img').css('height',$('#image img').css('width'));
