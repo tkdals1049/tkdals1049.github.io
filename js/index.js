@@ -134,7 +134,7 @@ onWindowResize();
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),100);
 	const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
-	// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
 		tabs[0].style.height = tabContentHeight;
@@ -200,7 +200,6 @@ function(data, status){
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
-	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
 	$('#contact').html('</br>Name: '+pInfo.fname+pInfo.lname+'</br>Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
 	$('#summary').html('<span></span>');
 	var tes= ["</br>Introduction:<br/>"+profile.summary2];
