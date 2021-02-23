@@ -181,7 +181,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "03 실험 중."});
+	text: "04 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -223,11 +223,11 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
+	//loadPics(profile.pics);
+	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
 
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
-	//loadPics(profile.pics);
-	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
 
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);

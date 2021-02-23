@@ -12,7 +12,7 @@ div.content {
 }
 
 #blogname{
-	font-size:  1.8rem;
+	font-size:  1.5rem;
 	font-weight: bold;
 }
 
@@ -31,8 +31,7 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p,#summary p
-{
+#hello p,#summary p{
 	text-align: justify;
 }
 
@@ -41,23 +40,14 @@ div.content {
 }
 
 #links img{	
-	position:fixed;
-	top:680px;
-	width: 50px;
-	height: 50px;
+	width: 70%;
+	height: 70%;
+	filter: none;
+	border-radius: 100%;
+	margin-left: 425%;
 }
  
 #links .s2{
-	width: 16%;
-	margin: 2%;
-} 
-
-#pics img{	
-	width: 300px;
-	height: 150px;
-}
- 
-#pics .s2{
 	width: 16%;
 	margin: 2%;
 }
@@ -68,7 +58,7 @@ div.content {
 }
 
 .info{
-	height: 300%;
+	height: 100%;
 }
 
 #pageb .tabs{
@@ -77,8 +67,7 @@ div.content {
 
 
 .type.col.m4{
-	min-height: 300px;
-	min-width: 300px;
+	min-height: 200px;
 }
 
 .row.project,.row.education,.row.work{
@@ -105,7 +94,7 @@ div.content {
 }
 
 .tabs-content.carousel .carousel-item{
-	height: 500%;
+	height: 100%;
 	overflow-y: scroll;
 }
 
@@ -181,7 +170,7 @@ object{
 }
 
 #Says{
-	border-top: solid white 1px;
+	border-top: solid white 2px;
 	font-size: 1rem;
 	margin-top: 1%
 }
