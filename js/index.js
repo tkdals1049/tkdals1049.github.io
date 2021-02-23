@@ -95,7 +95,7 @@ var profileLinksInnerHTML = '';
 while(i<profileLinks.length){
 	profileLinksInnerHTML+='<div class="row">'
 	for(j=i;j<profileLinks.length&&j<i+5;j++){
-		profileLinksInnerHTML+='<div class="col s2">													<a href="'+profileLinks[j].link+'" target="_blank" >					<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">															</a></div>';
+		profileLinksInnerHTML+='<div class="col s2"><a href="'+profileLinks[j].link+'" target="_blank" ><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></a></div>';
 	}
 	profileLinksInnerHTML+='</div>';
 	i=j;
@@ -132,23 +132,20 @@ onWindowResize();
 }
 
 function onWindowResize(){
-const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
-console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
-const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-if (tabs && tabs[0]) {
-	tabs[0].style.height = 1000;
+	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
+	const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
+	// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	if (tabs && tabs[0]) {
+		tabs[0].style.height = tabContentHeight;
+	}
+	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
+	$('#image img').css('height',$('#image img').css('width'));
 }
-$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-$('#image img').css('height',$('#image img').css('width'));
-}
-
 
 $(window).resize(onWindowResize);
 
 var profile;
-
-
 
 function loadSays() {
 const SaysInnerHtml = `<div class="col m6">
@@ -186,17 +183,16 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "02번째 실험."
-});
+	text: "1 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
-	if(status!=="success") 
+	if(status!=="success")
 	{
 		swal({
 		title: "Hello World!!!",
-		text: "실험 중."
+		text: "에러터짐."
 	});
 	}
 	profile = data;
@@ -205,8 +201,15 @@ function(data, status){
 	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
 	$('#name').html('Name: '+pInfo.fname+pInfo.lname);
-	$('#contact').html('Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
-	$('#summary').html(profile.summary);
+	$('#contact').html('</br>Name: '+pInfo.fname+pInfo.lname+'</br>Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
+	$('#summary').html('<span></span>');
+	var tes= ["</br>Introduction:<br/>"+profile.summary2];
+	  const typed2 = new Typed('#summary span', {
+		strings: tes,
+		typeSpeed: 20,
+		cursorChar:"_",
+		loop:false
+	});
 	$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
@@ -214,6 +217,7 @@ function(data, status){
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
+	
 	$('#believe').html('<h4>I believe</h4><span></span>');
 	const typed = new Typed('#believe span', {
 		strings: profile.qoutes,
@@ -224,6 +228,7 @@ function(data, status){
 	loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
+	//loadPics(profile.pics);
 	$('#pics').html('<img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%"><img src="img/pic1.jpg"width="100%">');
 
 	loadSkills(profile.skills);
