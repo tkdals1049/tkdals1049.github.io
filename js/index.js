@@ -124,9 +124,7 @@ function onBodyLoad(){
 console.log('body loaded called');
 $('div.progress').css('display','none');
 $('div.content').css('display','block');
-$('.collapsible').collapsible({
-	'accordion' : true
-});
+$('.collapsible').collapsible({'accordion' : true});
 $('#tabs').tabs({ 'swipeable': true });
 onWindowResize();
 }
@@ -183,7 +181,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "1 실험 중."});
+	text: "02 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -229,7 +227,7 @@ function(data, status){
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	//loadPics(profile.pics);
-	$('#pics').html('<img src="img/pic1.jpg"><img src="img/pic1.jpg"><img src="img/pic1.jpg">');
+	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"><img src="img/pic1.jpg"><img src="img/pic1.jpg">');
 
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
