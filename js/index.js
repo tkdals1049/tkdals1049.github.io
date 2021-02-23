@@ -201,7 +201,7 @@ swal({
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
-	if(status!=="success") 
+	if(status!=="success")
 	{
 		swal({
 		title: "Hello World!!!",
