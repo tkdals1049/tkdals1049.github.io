@@ -124,7 +124,7 @@ function loadPics(pics)
 	var i;
 	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<div class="col m2"><path d="'+pics[j].icon+'"></path></div>';
+		picsInnerHTML+='<div class="col m2"><img d="img/'+pics[j].icon+'"></img></div>';
 	}
 	picsInnerHTML+='</div>';
 	$('#pics').html(picsInnerHTML);
@@ -196,7 +196,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "02 테스트."
+	text: "03 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
