@@ -132,8 +132,11 @@ onWindowResize();
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
-	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
+	
+	if(tabs[0].style.height!=null) location.reload();
 	if (tabs && tabs[0]) {
 		tabs[0].style.height = tabContentHeight;
 	}
@@ -237,6 +240,4 @@ function(data, status){
 	console.log('body loaded calling');
 	onBodyLoad();
 
-	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	if(tabs[0].style.height<=0&&tabs[0].style.height>1000) location.reload();
 });
