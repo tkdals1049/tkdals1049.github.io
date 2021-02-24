@@ -136,7 +136,7 @@ function onWindowResize(){
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
 	
-	if(tabs[0].style.height!=null) location.reload();
+	if(tabs[0].style.height==null)  document.location.reload();
 	if (tabs && tabs[0]) {
 		tabs[0].style.height = tabContentHeight;
 	}
@@ -184,7 +184,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "05 실험 중."});
+	text: "06 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
