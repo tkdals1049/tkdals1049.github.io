@@ -59,6 +59,7 @@ div.content {
 #pics img{	
 	width: 300px;
 	height: 150px;
+	border-radius: 100%;
 }
  
 #pics .s2{
