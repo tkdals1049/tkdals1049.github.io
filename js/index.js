@@ -104,15 +104,28 @@ $('#links').html(profileLinksInnerHTML);
 }
 
 function loadLikes(likes){
-likes = likes.sort(function(a,b){
-	return a.sn-b.sn;
-});
-var i;
-var likesInnerHTML = '<h4>I like</h4>';
-for(i=0;i<likes.length;i++){
-	likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
-}
-$('#likes').html(likesInnerHTML);
+	likes = likes.sort(function(a,b){
+		return a.sn-b.sn;
+	});
+	var i;
+	var likesInnerHTML = '<h4>I like</h4>';
+	for(i=0;i<likes.length;i++){
+		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
+	}
+	$('#likes').html(likesInnerHTML);
+	}
+
+function loadPics(pics)
+{
+	pics = pics.sort(function(a,b){
+		return a.sn-b.sn;
+	});
+	var i;
+	var picsInnerHTML = '<h4>My Pics</h4>';
+	for(i=0;i<pics.length;i++){
+		picsInnerHTML+='<object type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
+	}
+	$('#pics').html(picsInnerHTML);
 }
 
 function loadBlog() {
@@ -220,8 +233,7 @@ function(data, status){
 	// });
 	// loadLikes(profile.likes);
 	//loadPics(profile.pics);
-	$('#pics').html('<h4>My Pic</h4><object type="image/jpeg" data="img/'+profile.pics[0].icon+'">'+profile.pics[0].name+'</object>');
-	//$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col s2"><img src="img/'+profile.profileLinks[0].icon+'"></div></div>');
+	loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
