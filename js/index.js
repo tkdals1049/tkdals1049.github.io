@@ -192,6 +192,10 @@ const SaysInnerHtml = `<div class="col m6">
 $('#Says').html(SaysInnerHtml);
 }
 
+swal({
+	title: "Hello World!!!",
+	text: "에러터짐."
+});
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
