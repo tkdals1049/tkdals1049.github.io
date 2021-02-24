@@ -52,6 +52,10 @@ div.content {
 	margin: 2%;
 }
 
+#links .col.s2{
+	padding: 0;
+}
+
 #pics img{	
 	width: 300px;
 	height: 150px;
@@ -62,6 +66,9 @@ div.content {
 	margin: 2%;
 }
 
+#pics .col.s2{
+	padding: 0;
+}
 
 .section{
 	padding-top: 0;
@@ -86,10 +93,6 @@ div.content {
 	padding: 2%;
 	margin-top: 1%;
 	margin-bottom: 1%;
-}
-
-#links .col.s2{
-	padding: 0;
 }
 
 .tag{
