@@ -123,7 +123,7 @@ function loadPics(pics)
 	var i;
 	var picsInnerHTML = '<h4>My Pics</h4>';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<object type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
+		picsInnerHTML+='<object2 type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object2>';
 	}
 	$('#pics').html(picsInnerHTML);
 }
@@ -194,7 +194,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "에러터짐."
+	text: "01 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
