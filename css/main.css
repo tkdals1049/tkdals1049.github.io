@@ -61,6 +61,10 @@ div.content {
 	height: 150px;
 	border-radius: 100%;
 }
+
+#pics img path{
+	fill:  rgba(255,255,255,1);
+}
  
 #pics .s2{
 	width: 16%;
