@@ -237,7 +237,6 @@ function(data, status){
 	// });
 	// loadLikes(profile.likes);
 	//loadPics(profile.pics);
-	loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
