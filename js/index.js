@@ -132,14 +132,11 @@ onWindowResize();
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
-	
+	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
-	
 	if (tabs && tabs[0]) {
 		tabs[0].style.height = tabContentHeight;
 	}
-
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -184,7 +181,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "06 실험 중."});
+	text: "04 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
@@ -218,16 +215,16 @@ function(data, status){
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
 	
-	$('#believe').html('<h4>I believe</h4><span></span>');
-	const typed = new Typed('#believe span', {
-		strings: profile.qoutes,
-		typeSpeed: 40,
-		cursorChar:"_",
-		loop:false
-	});
+	// $('#believe').html('<h4>I believe</h4><span></span>');
+	// const typed = new Typed('#believe span', {
+	// 	strings: profile.qoutes,
+	// 	typeSpeed: 40,
+	// 	cursorChar:"_",
+	// 	loop:false
+	// });
 	// loadLikes(profile.likes);
 	//loadPics(profile.pics);
-	//$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
+	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
 
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
@@ -239,5 +236,4 @@ function(data, status){
 	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
-
 });
