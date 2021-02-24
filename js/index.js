@@ -210,6 +210,12 @@ function(data, status){
 	});
 	loadLikes(profile.likes);
 	
+	// for(i=0;i<likes.length;i++){
+	// 	likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
+	// $('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
+
+	$('#pics img').attr('src','img/pic1.jpg');
+
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);

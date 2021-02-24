@@ -63,6 +63,10 @@ div.content {
 }
 
 
+#pics .col.s2{
+	padding: 0;
+}
+
 .section{
 	padding-top: 0;
 	padding-bottom: 0.5rem;
