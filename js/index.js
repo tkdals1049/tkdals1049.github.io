@@ -220,9 +220,7 @@ function(data, status){
 	// });
 	// loadLikes(profile.likes);
 	//loadPics(profile.pics);
-	
-	profileLinksInnerHTML+='</div>';
-	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col s2"><img src="img/'+profile.pics[0].icon+'" alt="'+profile.pics[0].name+'"></div></div>');
+	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col s2"><img src="img/'+profile.pics[0].icon+'"></div></div>');
 
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
