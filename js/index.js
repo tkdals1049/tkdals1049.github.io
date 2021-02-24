@@ -226,7 +226,7 @@ function(data, status){
 	//loadPics(profile.pics);
 	
 	profileLinksInnerHTML+='</div>';
-	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col s2"><img src="img/'+profile.pics[j].icon+'" alt="'+profile.pics[j].name+'"></a></div></div>');
+	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col s2"><img src="img/'+profile.pics[0].icon+'" alt="'+profile.pics[0].name+'"></a></div></div>');
 
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
