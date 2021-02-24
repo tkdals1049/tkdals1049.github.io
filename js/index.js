@@ -139,8 +139,7 @@ function onWindowResize(){
 	if (tabs && tabs[0]) {
 		tabs[0].style.height = tabContentHeight;
 	}
-	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
-	
+
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
