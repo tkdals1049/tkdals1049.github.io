@@ -95,7 +95,7 @@ var profileLinksInnerHTML = '';
 while(i<profileLinks.length){
 	profileLinksInnerHTML+='<div class="row">'
 	for(j=i;j<profileLinks.length&&j<i+5;j++){
-		profileLinksInnerHTML+='<div class="col s2">													<a href="'+profileLinks[j].link+'" target="_blank" >					<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">															</a></div>';
+		profileLinksInnerHTML+='<div class="col s2"><a href="'+profileLinks[j].link+'" target="_blank" ><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></a></div>';
 	}
 	profileLinksInnerHTML+='</div>';
 	i=j;
@@ -124,37 +124,38 @@ function onBodyLoad(){
 console.log('body loaded called');
 $('div.progress').css('display','none');
 $('div.content').css('display','block');
-$('.collapsible').collapsible({
-	'accordion' : true
-});
+$('.collapsible').collapsible({'accordion' : true});
 $('#tabs').tabs({ 'swipeable': true });
 onWindowResize();
 }
 
 function onWindowResize(){
-const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
-// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
-const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-if (tabs && tabs[0]) {
-	tabs[0].style.height = tabContentHeight;
-}
-$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-$('#image img').css('height',$('#image img').css('width'));
-}
+	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
+	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
+	
+	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
+	
+	if (tabs && tabs[0]) {
+		tabs[0].style.height = tabContentHeight;
+	}
 
+	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
+	$('#image img').css('height',$('#image img').css('width'));
+}
 
 $(window).resize(onWindowResize);
 
 var profile;
-function loadMoghysSays() {
-const moghyaSaysInnerHtml = `<div class="col m6">
+
+function loadSays() {
+const SaysInnerHtml = `<div class="col m6">
 	<h6>Recipe for this website:</h6>	
 	<div class="row">
-		이 블로그는 Github Page를 이용해서 만든 블로그 포트폴리오입니다.
-		기존에 이용하던 블로그는 툴을 이용해 제작한 블로그이기에 삭제하고
-		프로그래머로써 직접 제작하고자 만들어보았습니다.
-		코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">여기</a>를 참조해주세요.
+	이 블로그는 Github Page를 이용해서 만든 블로그 포트폴리오입니다.
+	기존에 이용하던 블로그는 툴을 이용해 제작한 블로그이기에 삭제하고
+	프로그래머로써 직접 제작하고자 만들어보았습니다.
+	코드는 <a href="https://github.com/tkdals1049/tkdals1049.github.io/">여기</a>를 참조해주세요.
 	</div>
 </div>
 <div class="col m6">
@@ -178,22 +179,37 @@ const moghyaSaysInnerHtml = `<div class="col m6">
 		<div class="col m3 s3"><a href="http://t4t5.github.io/sweetalert/">Sweetalert</a></div>
 	</div>
 </div>`;
-$('#moghyaSays').html(moghyaSaysInnerHtml);
+$('#Says').html(SaysInnerHtml);
 }
+
+swal({
+	title: "Hello World!!!",
+	text: "06 실험 중."});
 
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
-	if(status!=="success") {
-		window.location.href = "/error.html";
+	if(status!=="success")
+	{
+		swal({
+		title: "Hello World!!!",
+		text: "에러터짐."
+	});
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
-	$('title').html(pInfo.nick+'|Portfolio');
-	$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
+	$('title').html(pInfo.nick+' | Portfolio');
+	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
-	$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
-	$('#summary').html(profile.summary);
+	$('#contact').html('</br>Name: '+pInfo.fname+pInfo.lname+'</br>Hobby: 게임 플레이 및 분석 </br>'+'Phone: '+pInfo.mob+'</br>'+'E-Mail: '+pInfo.email);
+	$('#summary').html('<span></span>');
+	var tes= ["</br>Introduction:<br/>"+profile.summary2];
+	  const typed2 = new Typed('#summary span', {
+		strings: tes,
+		typeSpeed: 20,
+		cursorChar:"_",
+		loop:false
+	});
 	$('#tabs').html(`					
 		<li class="tab col s2"><a href="#hello">Hello</a></li>
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
@@ -201,28 +217,27 @@ function(data, status){
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
-	$('#believe').html('<h4>I believe</h4><span></span>');
-	const typed = new Typed('#believe span', {
-		strings: profile.qoutes,
-		typeSpeed: 40,
-		cursorChar:"_",
-		loop:true
-	});
-	loadLikes(profile.likes);
 	
-	// for(i=0;i<likes.length;i++){
-	// 	likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
-	// $('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
-
-	$('#pics img').attr('src','img/pic1.jpg');
+	// $('#believe').html('<h4>I believe</h4><span></span>');
+	// const typed = new Typed('#believe span', {
+	// 	strings: profile.qoutes,
+	// 	typeSpeed: 40,
+	// 	cursorChar:"_",
+	// 	loop:false
+	// });
+	// loadLikes(profile.likes);
+	//loadPics(profile.pics);
+	//$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
 
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
+
 	loadSkills(profile.skills);
 	loadProjects(profile.projects);
 	loadWorks(profile.experince);
 	loadEducations(profile.educations);
-	loadMoghysSays();
+	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
+
 });
