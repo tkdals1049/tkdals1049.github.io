@@ -209,8 +209,7 @@ function(data, status){
 		loop:true
 	});
 	loadLikes(profile.likes);
-	$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
-
+	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);
