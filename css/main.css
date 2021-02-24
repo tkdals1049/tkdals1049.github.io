@@ -40,17 +40,28 @@ div.content {
 }
 
 #links img{	
-	width: 70%;
-	height: 70%;
-	filter: none;
+	position:fixed;
+	top:680px;
+	width: 50px;
+	height: 50px;
 	border-radius: 100%;
-	margin-left: 425%;
 }
  
 #links .s2{
 	width: 16%;
 	margin: 2%;
 }
+
+#pics img{	
+	width: 300px;
+	height: 150px;
+}
+ 
+#pics .s2{
+	width: 16%;
+	margin: 2%;
+}
+
 
 .section{
 	padding-top: 0;
