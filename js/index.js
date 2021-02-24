@@ -131,7 +131,7 @@ onWindowResize();
 
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-	const tabContentHeight = Math.max(heightPageA,(window.innerHeight - 50)) + 'px';
+	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
 	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
@@ -236,4 +236,7 @@ function(data, status){
 	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
+
+	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	if(tabs[0].style.height<=0&&tabs[0].style.height>1000) location.reload();
 });
