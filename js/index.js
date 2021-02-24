@@ -218,13 +218,13 @@ function(data, status){
 		<li class="tab col s3"><a href="#education">Education</a></li>
 	`);
 	
-	// $('#believe').html('<h4>I believe</h4><span></span>');
-	// const typed = new Typed('#believe span', {
-	// 	strings: profile.qoutes,
-	// 	typeSpeed: 40,
-	// 	cursorChar:"_",
-	// 	loop:false
-	// });
+	$('#believe').html('<h4>I believe</h4><span></span>');
+	const typed = new Typed('#believe span', {
+		strings: profile.qoutes,
+		typeSpeed: 40,
+		cursorChar:"_",
+		loop:false
+	});
 	// loadLikes(profile.likes);
 	//loadPics(profile.pics);
 	//$('#pics').html('<h4>My Pic</h4><img src="img/pic1.jpg"> <img src="img/pic2.png"><img src="img/pic3.jpg"> <img src="img/pic4.jpg">');
