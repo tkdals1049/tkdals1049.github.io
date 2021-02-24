@@ -56,16 +56,18 @@ div.content {
 	padding: 0;
 }
 
-#pics img{	
-	width: 300px;
-	height: 150px;
-	border-radius: 100%;
+#pics .m2{
+	width: 14.666%;
+	margin: 1%;
+	padding: 2%;
+	border-radius: 50%;
+	font-size: 1.15rem;
+}
+#pics img {
+	height: 100%;
+	width: 100%;
 }
 
-#pics img path{
-	fill:  rgba(255,255,255,1);
-}
- 
 #pics .s2{
 	width: 16%;
 	margin: 2%;
@@ -155,12 +157,6 @@ div.content {
 
 object{
 	width: 16%;
-	margin: 1%;
-}
-
-#object2{
-	width: 300px;
-	height: 150px;
 	margin: 1%;
 }
 

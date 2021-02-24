@@ -109,11 +109,9 @@ function loadLikes(likes){
 	});
 	var i;
 	var likesInnerHTML = '<h4>I like</h4>';
-	for(i=0;i<likes.length;i++){
-		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
-	}
+
 	$('#likes').html(likesInnerHTML);
-	}
+}
 
 function loadPics(pics)
 {
@@ -122,11 +120,11 @@ function loadPics(pics)
 	});
 
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
+	var picsInnerHTML = '<h4>My Pics</h4>';
 	for(i=0;i<pics.length;i++){
 		picsInnerHTML+='<div class="col m2"><img d="img/'+pics[j].icon+'"></img></div>';
 	}
-	picsInnerHTML+='</div>';
+	
 	$('#pics').html(picsInnerHTML);
 }
 
