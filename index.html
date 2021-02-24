@@ -45,7 +45,13 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-144249374-1');
 		</script>
-		<script>location.reload();</script>
+		<script>
+		if (self.name != 'reload') {
+			self.name = 'reload';
+			self.location.reload(true);
+		}
+		else self.name = ''; location.reload();
+		</script>
 		
 		<base target="_blank" rel="noopener noreferrer">
 
