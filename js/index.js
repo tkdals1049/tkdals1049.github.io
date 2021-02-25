@@ -211,6 +211,7 @@ function(data, status){
 	}
 	profile = data;
 	var pInfo = profile.personalInfo;
+	loadPics(profile.pics);
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
@@ -239,7 +240,6 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
-	loadPics(profile.pics);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 
