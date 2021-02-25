@@ -197,6 +197,7 @@ swal({
 	title: "Hello World!!!",
 	text: "9 테스트."
 });
+
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
@@ -237,7 +238,7 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
-	loadPics(profile.pics);
+	//loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
