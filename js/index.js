@@ -124,7 +124,7 @@ function loadPics(pics)
 	var row = '<h4>My Pics</h4>';
 	
 	for(i=0;i<pics.length;i++){
-		row+='<img src="img/'+pics[i].icon+'" alt="이미지"/>';
+		row+='<p><img src="img/'+pics[i].icon+'" alt="이미지"/></p>';
 	}
 	//$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width="280px" /></p>');
 
@@ -155,6 +155,7 @@ function onWindowResize(){
 	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
+	$('#pics img').css('height',$('#pics img').css('width'));
 }
 
 $(window).resize(onWindowResize);
