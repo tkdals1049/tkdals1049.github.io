@@ -68,6 +68,13 @@
 		
 	</head>
 	<body>
+		<script>
+			if (self.name != 'reload') {
+				self.name = 'reload';
+				location.reload();
+			}
+			else self.name = '';
+		</script>
 		<div class="row content">
 			<div id="pagea" class="page col m3 s12">
 				<div class="row"><h1 id="blogname" class="center-align"></h1></div>
@@ -109,12 +116,5 @@
 		</div>
 	</body>
 	<script src="js/index.js"></script>
-	<script>
-		if (self.name != 'reload') {
-			self.name = 'reload';
-			location.reload();
-		}
-		else self.name = '';
-	</script>
 		
 </html>

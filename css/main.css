@@ -56,34 +56,9 @@ div.content {
 	padding: 0;
 }
 
-#pics .m2{
-	width: 14.666%;
-	margin: 1%;
-	padding: 2%;
-	border-radius: 50%;
-	font-size: 1.15rem;
-}
 #pics img {
 	height: 150px;
 	width: 300px;
-}
-
-#pics svg {
-	height: 100%;
-	width: 100%;
-}
-
-#pics svg path{
-	fill: rgba(255,255,255,1);
-}
-
-#pics .s2{
-	width: 16%;
-	margin: 2%;
-}
-
-#pics .col.s2{
-	padding: 0;
 }
 
 .section{
