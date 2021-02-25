@@ -249,5 +249,5 @@ function(data, status){
 	loadEducations(profile.educations);
 	loadSays();
 	console.log('body loaded calling');
-	//onBodyLoad();
+	onBodyLoad();
 });
