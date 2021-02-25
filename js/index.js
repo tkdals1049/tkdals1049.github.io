@@ -124,7 +124,7 @@ function loadPics(pics)
 	var row = '<h4>My Pics</h4>';
 	
 	for(i=0;i<pics.length;i++){
-		row+='<p><img src="img/'+pics[i].icon+'" alt="이미지" width="300" height="200"/></p>';
+		row+='<img src="img/'+pics[i].icon+'" alt="이미지"/>';
 	}
 	//$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width="280px" /></p>');
 
