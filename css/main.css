@@ -64,8 +64,8 @@ div.content {
 	font-size: 1.15rem;
 }
 #pics img {
-	height: 100%;
-	width: 100%;
+	height: 150px;
+	width: 300px;
 }
 
 #pics svg {

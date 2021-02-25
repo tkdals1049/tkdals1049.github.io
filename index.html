@@ -51,6 +51,8 @@
 			location.reload();
 		}
 		else self.name = '';
+		if (location.href.indexOf('#reload') == -1)
+		  location.href += '#reload'
 		</script>
 		
 		<base target="_blank" rel="noopener noreferrer">
