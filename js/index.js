@@ -197,7 +197,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "22 테스트."
+	text: "23 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
