@@ -124,7 +124,7 @@ function loadPics(pics)
 	var row = '<h4>My Pics</h4>';
 	
 	for(i=0;i<pics.length;i++){
-		row+='<p><img src="img/'+pics[i].icon+'" alt="이미지"/></p>';
+		row+='<p><img src="img/'+pics[i].icon+'" alt="이미지" width="300" height="200"/></p>';
 	}
 	//$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width="280px" /></p>');
 
@@ -153,9 +153,9 @@ function onWindowResize(){
 	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
 	
 	tabs[0].style.height = tabContentHeight;
+	$('#pics img').css('height',900);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
-	$('#pics img').css('height',$('#pics img').css('width'));
 }
 
 $(window).resize(onWindowResize);
@@ -198,7 +198,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "21 테스트."
+	text: "22 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
