@@ -209,7 +209,6 @@ function(data, status){
 		text: "에러터짐."
 	});
 	}
-	$('#pics img').css('height',900);
 	profile = data;
 	var pInfo = profile.personalInfo;
 	$('title').html(pInfo.nick+' | Portfolio');
