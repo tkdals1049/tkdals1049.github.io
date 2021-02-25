@@ -212,7 +212,6 @@ function(data, status){
 	$('#pics img').css('height',900);
 	profile = data;
 	var pInfo = profile.personalInfo;
-	loadPics(profile.pics);
 	$('title').html(pInfo.nick+' | Portfolio');
 	$('#blogname').html(pInfo.mname);
 	$('#image img').attr('src','img/'+pInfo.myimg);
@@ -251,4 +250,5 @@ function(data, status){
 	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
+	loadPics(profile.pics);
 });
