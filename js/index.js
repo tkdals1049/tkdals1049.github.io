@@ -142,7 +142,7 @@ $('div.progress').css('display','none');
 $('div.content').css('display','block');
 $('.collapsible').collapsible({'accordion' : true});
 $('#tabs').tabs({ 'swipeable': true });
-//onWindowResize();
+onWindowResize();
 }
 
 function onWindowResize(){
@@ -150,9 +150,8 @@ function onWindowResize(){
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
 	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	if (tabs && tabs[0]) {
+	
 		tabs[0].style.height = tabContentHeight;
-	}
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
