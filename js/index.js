@@ -125,7 +125,6 @@ function loadPics(pics)
 		picsInnerHTML+='<div class="col s2"><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></div>';
 	}
 	picsInnerHTML+='</div>';
-	
 	$('#pics').html(picsInnerHTML);
 }
 
@@ -237,7 +236,7 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
-	loadPics(profile.pics);
+	//loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
