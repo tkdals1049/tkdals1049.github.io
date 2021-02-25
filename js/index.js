@@ -151,7 +151,8 @@ function onWindowResize(){
 	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	
-		tabs[0].style.height = tabContentHeight;
+	tabs[0].style.height = tabContentHeight;
+	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -196,7 +197,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "16 테스트."
+	text: "17 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
