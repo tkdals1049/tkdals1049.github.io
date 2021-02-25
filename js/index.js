@@ -120,11 +120,12 @@ function loadPics(pics)
 	});
 
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4>';
+	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<object type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
+		picsInnerHTML+='<div class="col s2"><img src="img/'+pics[i].icon+'" alt="'+pics[i].name+'"></div>';
 	}
-	
+	picsInnerHTML+='</div>';
+
 	$('#pics').html(picsInnerHTML);
 }
 
@@ -194,7 +195,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "6 테스트."
+	text: "7 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
