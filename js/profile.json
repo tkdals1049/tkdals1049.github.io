@@ -732,6 +732,11 @@
   ],
   "pics": [
     {
+      "name": "pic0",
+      "icon": "pic0.jpg",
+      "sn": 0
+    },
+    {
       "name": "pic1",
       "icon": "pic1.jpg",
       "sn": 1
