@@ -120,11 +120,17 @@ function loadPics(pics)
 	});
 
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4>';
+	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">';
+		picsInnerHTML+='<div class="col s2"><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></div>';
 	}
+	picsInnerHTML+='</div>';
 	
+	profileLinksInnerHTML+='<div class="row">'
+	for(j=i;j<profileLinks.length&&j<i+5;j++){
+		profileLinksInnerHTML+='<div class="col s2"><a href="'+profileLinks[j].link+'" target="_blank" ><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></a></div>';
+	}
+	profileLinksInnerHTML+='</div>';
 	$('#pics').html(picsInnerHTML);
 }
 
@@ -194,7 +200,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "6 테스트."
+	text: "10 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
