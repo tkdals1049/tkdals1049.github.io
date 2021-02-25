@@ -142,7 +142,7 @@ $('div.progress').css('display','none');
 $('div.content').css('display','block');
 $('.collapsible').collapsible({'accordion' : true});
 $('#tabs').tabs({ 'swipeable': true });
-onWindowResize();
+//onWindowResize();
 }
 
 function onWindowResize(){
