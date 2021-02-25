@@ -118,12 +118,8 @@ function loadPics(pics)
 	pics = pics.sort(function(a,b){
 		return a.sn-b.sn;
 	});
-
-	var row = '<h4>My Pics</h4><div class="row">';
-	for(j=i;j<i+6&&j<skills.length;j++){
-		row+= '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>';
-	}
-	row+='</div>';
+	var i;
+	var row = '<h4>My Pics</h4>';
 
 	$('#pics').html(row);
 }
@@ -194,7 +190,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "10 테스트."
+	text: "11 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
