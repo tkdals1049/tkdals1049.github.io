@@ -126,7 +126,7 @@ function loadPics(pics)
 	}
 	picsInnerHTML+='</div>';
 
-	$('#pics').html(<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>);
+	$('#pics').html('<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>');
 }
 
 function loadBlog() {
