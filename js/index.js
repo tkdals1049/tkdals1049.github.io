@@ -120,11 +120,8 @@ function loadPics(pics)
 	});
 
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
-	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<div class="col s2"><img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'"></div>';
-	}
-	picsInnerHTML+='</div>';
+	var picsInnerHTML = '<h4>My Pics</h4>';
+	
 	$('#pics').html(picsInnerHTML);
 }
 
@@ -236,7 +233,7 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
-	//loadPics(profile.pics);
+	loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
