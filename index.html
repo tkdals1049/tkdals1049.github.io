@@ -45,16 +45,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-144249374-1');
 		</script>
-		<script>
-		if (self.name != 'reload') {
-			self.name = 'reload';
-			location.reload();
-		}
-		else self.name = '';
-		if (location.href.indexOf('#reload') == -1)
-		  location.href += '#reload'
-		</script>
-		
+
 		<base target="_blank" rel="noopener noreferrer">
 
 		<link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
@@ -118,4 +109,14 @@
 		</div>
 	</body>
 	<script src="js/index.js"></script>
+	<script>
+		if (self.name != 'reload') {
+			self.name = 'reload';
+			location.reload();
+		}
+		else self.name = '';
+		if (location.href.indexOf('#reload') == -1)
+			location.reload();
+	</script>
+		
 </html>
