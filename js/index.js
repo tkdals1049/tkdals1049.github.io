@@ -124,7 +124,7 @@ function loadPics(pics)
 	var row = '<h4>My Pics</h4>';
 	
 	for(i=0;i<pics.length;i++){
-		row+='<img src="img/'+pics[i].icon+' alt="이미지" width="150px height="150px" />';
+		row+='<img src="img/'+pics[i].icon+'" alt="이미지" width="150px" height="150px" />';
 	}
 	//$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width`="280px" /></p>');
 
@@ -197,7 +197,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "13 테스트."
+	text: "14 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
