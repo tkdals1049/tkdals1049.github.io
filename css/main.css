@@ -56,6 +56,11 @@ div.content {
 	padding: 0;
 }
 
+#pics img {
+	height: 900px;
+	width: 320px;
+}
+
 .section{
 	padding-top: 0;
 	padding-bottom: 0.5rem;
