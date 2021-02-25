@@ -236,7 +236,7 @@ function(data, status){
 	// loadLikes(profile.likes);
 	loadPics(profile.pics);
 	
-	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col m2"><svg viewBox="0 0 128 128"><path d="img/pic1.svg"></path></svg></div></div>');
+	$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width`="280px" /></p>');
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 
