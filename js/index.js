@@ -122,7 +122,7 @@ function loadPics(pics)
 	var i;
 	var picsInnerHTML = '<h4>My Pics</h4>';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<img type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
+		picsInnerHTML+='<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">';
 	}
 	
 	$('#pics').html(picsInnerHTML);
