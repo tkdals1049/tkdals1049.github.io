@@ -122,7 +122,7 @@ function loadPics(pics)
 	var i;
 	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<div class="col s2"><img src="img/'+pics[i].icon+'" alt="'+pics[i].name+'"></div>';
+		picsInnerHTML+='<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>';
 	}
 	picsInnerHTML+='</div>';
 
