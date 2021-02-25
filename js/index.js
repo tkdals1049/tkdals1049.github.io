@@ -120,13 +120,12 @@ function loadPics(pics)
 	});
 
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4><div class="row">';
+	var picsInnerHTML = '<h4>My Pics</h4>';
 	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<div class="col s2"><img src="img/'+pics[j].icon+'" alt="'+pics[j].name+'"></div>';
+		picsInnerHTML+='<img type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
 	}
-	picsInnerHTML+='</div>';
-
-	$('#pics').html('<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>');
+	
+	$('#pics').html(picsInnerHTML);
 }
 
 function loadBlog() {
@@ -195,9 +194,8 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "9 테스트."
+	text: "6 테스트."
 });
-
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
@@ -238,7 +236,7 @@ function(data, status){
 	// 	loop:false
 	// });
 	// loadLikes(profile.likes);
-	//loadPics(profile.pics);
+	loadPics(profile.pics);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
