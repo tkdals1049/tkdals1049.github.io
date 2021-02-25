@@ -119,10 +119,13 @@ function loadPics(pics)
 		return a.sn-b.sn;
 	});
 
-	var i;
-	var picsInnerHTML = '<h4>My Pics</h4>';
-	
-	$('#pics').html(picsInnerHTML);
+	var row = '<h4>My Pics</h4><div class="row">';
+	for(j=i;j<i+6&&j<skills.length;j++){
+		row+= '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+pics[j].icon+'"></path></svg>'+pics[j].name+'</div>';
+	}
+	row+='</div>';
+
+	$('#pics').html(row);
 }
 
 function loadBlog() {
