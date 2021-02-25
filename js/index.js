@@ -109,7 +109,9 @@ function loadLikes(likes){
 	});
 	var i;
 	var likesInnerHTML = '<h4>I like</h4>';
-
+	for(i=0;i<likes.length;i++){
+		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
+	}
 	$('#likes').html(likesInnerHTML);
 }
 
@@ -190,7 +192,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "11 테스트."
+	text: "12 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
@@ -234,7 +236,7 @@ function(data, status){
 	// loadLikes(profile.likes);
 	loadPics(profile.pics);
 	
-	$('#pics').html('<div class="row"><div class="col m2"><svg viewBox="0 0 128 128"><path d="img/pic1.svg"></path></svg></div></div>');
+	$('#pics').html('<h4>My Pic</h4><div class="row"><div class="col m2"><svg viewBox="0 0 128 128"><path d="img/pic1.svg"></path></svg></div></div>');
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 
