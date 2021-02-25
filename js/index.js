@@ -234,6 +234,7 @@ function(data, status){
 	// loadLikes(profile.likes);
 	loadPics(profile.pics);
 	
+	$('#pics').html('<div class="row"><div class="col m2"><svg viewBox="0 0 128 128"><path d="img/pic1.svg"></path></svg></div></div>');
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 
