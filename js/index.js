@@ -36,6 +36,7 @@ for(i=0;i<projects.length;i++){
 	tags+='</div>';
 	project+=tags;
 	project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo+'</div></div>';
+	if(projects[i].icon!="#") project+='<img src="img/'+projects[j].icon+'"></br>';
 	projectsInnerHTML+=project;
 }
 $('#projects').html(projectsInnerHTML);
@@ -242,11 +243,11 @@ function(data, status){
 	loadLinks(profile.profileLinks);
 
 	loadSkills(profile.skills);
-	loadProjects(profile.projects);
 	loadWorks(profile.experince);
 	loadEducations(profile.educations);
 	loadSays();
 	console.log('body loaded calling');
 	onBodyLoad();
+	loadProjects(profile.projects);
 	loadPics(profile.pics);
 });
