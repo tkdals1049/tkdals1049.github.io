@@ -35,9 +35,9 @@ for(i=0;i<projects.length;i++){
 	if(projects[i].link!="#") tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a>';
 	tags+='</div>';
 	project+=tags;
-	project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo;
+	project+='</div><div class="col m6 s12 details">';
 	if(projects[i].icon!="#") project+='<img src="img/'+projects[i].icon+'"></br>';
-	project+='</div></div>';
+	project+=projects[i].shortInfo+'</div></div>';
 	projectsInnerHTML+=project;
 }
 $('#projects').html(projectsInnerHTML);
