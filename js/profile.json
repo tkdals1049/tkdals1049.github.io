@@ -435,42 +435,131 @@
   "projects": [
     {
       "sn": 1,
-      "projectTitle": "Strategic Location using Facebook Data",
-      "periodStart": "Dec 2016",
-      "periodEnd": "Dec 2016",
+      "projectTitle": "VPL기반의 서비스 로봇용 안내 어플리케이션",
+      "periodStart": "2011년 4월",
+      "periodEnd": "2011년 12월",
       "toolsUsed": [
-        "python",
-        "scikit-learn",
-        "ipynb",
-        "graph-api"
+        "VPL",
+        "TTS"
       ],
       "tags": [
-        "machine-learning",
-        "regression",
-        "python"
+        "관절 제어",
+        "안내 서비스",
+        "로봇 콘트롤러 개발"
       ],
-      "shortInfo": "Choosing optimal location for business using data from social media websites contribute largely to the profit.Our System helps business choose optimal location for higher number of check-ins .indirectly helping businesses to increase their profits.We have used to machine learning techniques to help improve our system.",
-      "link": "https://github.com/moghya/Stratergic-Location",
-      "icon": "tent.svg"
+      "shortInfo": "PC 기반의 지능형 로봇 시스템인 아이구로의 머리 움직임과 로봇 팔을 이용한 관절 제어와 TTS를 이용한 음성 데이터 출력해 안내서비스를 제공하는 VPL 어플리케이션을 개발한다. 관절제어 및 자유로운 움직임을 통해 사람의 관절에 대해 이해하고 더 나아가 로봇에 대한 흥미 유발이 가능하다.",
+      "link": "#",
+      "icon": "pro1.jpg"
+    },
+    {
+      "sn": 2,
+      "projectTitle": "얼굴 인식을 통한 간병 시스템",
+      "periodStart": "2012년 5월",
+      "periodEnd": "2012년 12월",
+      "toolsUsed": [
+        "c#",
+        "Arduino"
+      ],
+      "tags": [
+        "얼굴 인식",
+        "다이나믹셀 모터제어",
+        "상호작용 로봇"
+      ],
+      "shortInfo": "로봇의 핵심 기술인 HRI(Human-Robot-Interaction)를 본 작품에 기반을 두고  있으며 영상과 음성 인식에 중점 두고 이러한 데이터를 바탕으로 별도의 입력장치 없이 얼굴과 음성만으로 로봇을 제어하여 손과 발이 불편한 사람에 옆에서 간호와 놀이를 해줄 수 있는 서비스를 제공한다.",
+      "link": "#",
+      "icon": "#"
+    },
+    {
+      "sn": 3,
+      "projectTitle": "작업 능력 향상을 위한 악력 증강 글러브 개발",
+      "periodStart": "2015년 4월",
+      "periodEnd": "2015년 12월",
+      "toolsUsed": [
+        "SolidWorks",
+        "Arduino"
+      ],
+      "tags": [
+        "3D 프린터 조립",
+        "엔코더 모터제어",
+        "엑소 슈트"
+      ],
+      "shortInfo": "손가락의 운동을 읽는 압력센서, 힘을 가해주는 엔코더 모터 이 모두를 제어하는 아두이노를 이용해 모터의 회전을 이용한 근력증강을 구현한다. 3D프린터를 이용해 누구나 만들 수 잇는 작품 개발을 목표로 한다.",
+      "link": "https://youtu.be/Rr0yYASjl0E",
+      "icon": "pro2.jpg"
     },
     {
       "sn": 4,
-      "projectTitle": "Detection and Prevention of Black hole Attack in MANET",
-      "periodStart": "Jul 2016",
-      "periodEnd": "Nov 2016",
+      "projectTitle": "유니티를 이용한 자전거 VR 시뮬레이터",
+      "periodStart": "2016년 4월",
+      "periodEnd": "2016년 12월",
       "toolsUsed": [
-        "c++",
-        "ns2",
-        "tcl",
-        "awk"
+        "Unity",
+        "Arduino",
+        "Oculus"
       ],
       "tags": [
-        "c++",
-        "blackhole-attack",
-        "ns2"
+        "VR 시뮬레이터",
+        "유니티 툴",
+        "가상 체험"
       ],
-      "shortInfo": "It was a Team Project. We made changes in AODV protocol to simulate Black hole attack in Mobile and Adhoc Network​ and later implemented techniques for prevention of the Attack.",
-      "link": "#"
+      "shortInfo": "속도계와 자이로 센서를 부착하여 자전거의 속도와 기울기를 받아와 그 값을 토대로 VR 영상을 재생함으로 사용자가 가상의 주행환경을 즐기는 것이 가능하도록 한다. VR영상이 많아지는 현재 다양한 컨텐츠를 간접적으로나마 즐기는 것이 가능한 시뮬레이션을 만드는 것을 목적으로 한다.",
+      "link": "https://youtu.be/_uScaevioc0",
+      "icon": "pro3.jpg"
+    },
+    {
+      "sn": 5,
+      "projectTitle": "GDI를 이용한 록맨제로 개발",
+      "periodStart": "2017년 7월",
+      "periodEnd": "2017년 8월",
+      "toolsUsed": [
+        "GDI",
+        "C++"
+      ],
+      "tags": [
+        "록맨 제로",
+        "GDI게임"
+      ],
+      "shortInfo": "많은 사람들이 즐겨왔던 록맨제로를 프로그래밍으로 재현하는 것을 목표로 한다. 스프라이트와 GDI를 이용하여 록맨제로의 디자인을 구현하고 이를 기반으로 2D 로그라이크 게임을 만든다.",
+      "link": "https://youtu.be/gDFpwfGuvQ8",
+      "icon": "#"
+    },
+    {
+      "sn": 6,
+      "projectTitle": "DirectX를 이용한 몬스터 헌터 개발",
+      "periodStart": "2018년 8월",
+      "periodEnd": "2019년 3월",
+      "toolsUsed": [
+        "DieretX",
+        "C++",
+        "API"
+      ],
+      "tags": [
+        "몬스터 헌터",
+        "DirectX 게임",
+        "포트폴리오"
+      ],
+      "shortInfo": "3D 액션 게임 정석이라고도 할 수 있는 몬스터 헌터를 DirectX와 C++로 구현하는 것을 목표로 한다. 몬스터헌터에서 직접 모델과 사운드 등의 데이터를 뽑아와 재구성함으로 몬스터헌터를 재현하도록 한다.",
+      "link": "#",
+      "icon": "#"
+    },
+    {
+      "sn": 7,
+      "projectTitle": "프트폴리오용 블로그 개발",
+      "periodStart": "2020년 10월",
+      "periodEnd": "-",
+      "toolsUsed": [
+        "VSCode",
+        "Java",
+        "Css",
+        "HTML"
+      ],
+      "tags": [
+        "블로그 개발",
+        "포트폴리오"
+      ],
+      "shortInfo": "다른 누군가가 만든 툴이 아닌 프로그래머로써 스스로의 능력으로 블로그를 개발하도록 한다. Java와 Css를 이용하여 보다 많은 기능을 구현할 수 있게 한다.",
+      "link": "http://tkdals1049.github.io",
+      "icon": "#"
     }
   ],
   "summary": "<p>게임이란 가벼운 심심풀이지만 그렇기에 사람들은 그 잠깐의 시간동안 자유로운 한 때를 즐길 수 있고 그 휴식이 있기에 다른 무언가에 충실해질 수 있다고 생각합니다.</p>\n\n<p> 그리고 저는 그 가벼운 심심풀이를 통해 좋은 경험과 즐거운 시간을 선사할 수 있는 게임을 개발할 프로그래머의 원석입니다.</p>",
