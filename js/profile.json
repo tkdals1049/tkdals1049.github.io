@@ -354,6 +354,46 @@
       "sn": 0,
       "link": "https://www.media.net/",
       "workPosition": "2012 한이음 공모전 입상",
+      "periodStart": "2012년 12월",
+      "periodEnd": "",
+      "organisation": "수상경력",
+      "experience": "<ul><li>Involved in designing, developing features and parts of an App Distribution platform.</li><li>Majorly my work involves:</li><ul><li>– Designing, writing and consuming HTTP-REST APIs.</li><li>– Setting up job queues for multiple monitoring tasks.</li><li>– Writing template code for full-stack Web and Desktop applications.</li><li>– Automating and setting up application build processes.</li><li>– Extensive research and POC creation of features,solutions for novel business requirements.</li><li>– Identifying bottlenecks across system and optimize database queries, page load time, serving time, build time.</li></ul><li>Developed node-js, python back-end applications for automating and monitoring application build processes.</li><li>Developed node-js module for restructuring and renaming directory tree, handled resolution of interlinked file-paths in files.</li><li>Developed macOs desktop application(A Safari App Extension) using Swift for search monetization with app installer and app auto update feature from scratch</li></ul>",
+      "type": "Medal"
+    },
+    {
+      "sn": 1,
+      "link": "https://www.media.net/",
+      "workPosition": "2015 한이음 공모전 입상",
+      "periodStart": "July 2018",
+      "periodEnd": "",
+      "organisation": "수상경력",
+      "experience": "<ul><li>Involved in designing, developing features and parts of an App Distribution platform.</li><li>Majorly my work involves:</li><ul><li>– Designing, writing and consuming HTTP-REST APIs.</li><li>– Setting up job queues for multiple monitoring tasks.</li><li>– Writing template code for full-stack Web and Desktop applications.</li><li>– Automating and setting up application build processes.</li><li>– Extensive research and POC creation of features,solutions for novel business requirements.</li><li>– Identifying bottlenecks across system and optimize database queries, page load time, serving time, build time.</li></ul><li>Developed node-js, python back-end applications for automating and monitoring application build processes.</li><li>Developed node-js module for restructuring and renaming directory tree, handled resolution of interlinked file-paths in files.</li><li>Developed macOs desktop application(A Safari App Extension) using Swift for search monetization with app installer and app auto update feature from scratch</li></ul>",
+      "type": "Medal"
+    }
+    ,{
+      "sn": 2,
+      "link": "https://www.media.net/",
+      "workPosition": "제8회 보조기구 아이디어 공모전 입선",
+      "periodStart": "July 2018",
+      "periodEnd": "",
+      "organisation": "수상경력",
+      "experience": "<ul><li>Involved in designing, developing features and parts of an App Distribution platform.</li><li>Majorly my work involves:</li><ul><li>– Designing, writing and consuming HTTP-REST APIs.</li><li>– Setting up job queues for multiple monitoring tasks.</li><li>– Writing template code for full-stack Web and Desktop applications.</li><li>– Automating and setting up application build processes.</li><li>– Extensive research and POC creation of features,solutions for novel business requirements.</li><li>– Identifying bottlenecks across system and optimize database queries, page load time, serving time, build time.</li></ul><li>Developed node-js, python back-end applications for automating and monitoring application build processes.</li><li>Developed node-js module for restructuring and renaming directory tree, handled resolution of interlinked file-paths in files.</li><li>Developed macOs desktop application(A Safari App Extension) using Swift for search monetization with app installer and app auto update feature from scratch</li></ul>",
+      "type": "Medal"
+    }
+    ,{
+      "sn": 3,
+      "link": "https://www.media.net/",
+      "workPosition": "2016 캡스톤 디자인 경진 대회 금상",
+      "periodStart": "July 2018",
+      "periodEnd": "",
+      "organisation": "수상경력",
+      "experience": "<ul><li>Involved in designing, developing features and parts of an App Distribution platform.</li><li>Majorly my work involves:</li><ul><li>– Designing, writing and consuming HTTP-REST APIs.</li><li>– Setting up job queues for multiple monitoring tasks.</li><li>– Writing template code for full-stack Web and Desktop applications.</li><li>– Automating and setting up application build processes.</li><li>– Extensive research and POC creation of features,solutions for novel business requirements.</li><li>– Identifying bottlenecks across system and optimize database queries, page load time, serving time, build time.</li></ul><li>Developed node-js, python back-end applications for automating and monitoring application build processes.</li><li>Developed node-js module for restructuring and renaming directory tree, handled resolution of interlinked file-paths in files.</li><li>Developed macOs desktop application(A Safari App Extension) using Swift for search monetization with app installer and app auto update feature from scratch</li></ul>",
+      "type": "Medal"
+    }
+    ,{
+      "sn": 4,
+      "link": "https://www.media.net/",
+      "workPosition": "2016 한이음 공모전 입상",
       "periodStart": "July 2018",
       "periodEnd": "",
       "organisation": "수상경력",
