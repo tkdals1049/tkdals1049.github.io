@@ -56,7 +56,7 @@ for(i=0;i<works.length;i++){
 		<div class="row title">
 			<a href="${works[i].link}">${works[i].organisation}</a> |
 			${works[i].workPosition} |
-			${works[i].periodStart} - ${works[i].periodEnd}
+			${works[i].periodStart} 
 		</div>
 		<hr/>
 		<div class="row details">
@@ -198,7 +198,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "25 테스트."
+	text: "26 테스트."
 });
 $.get("js/profile.json", 
 function(data, status){
