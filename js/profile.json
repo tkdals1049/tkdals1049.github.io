@@ -357,7 +357,7 @@
       "periodStart": "서울게임아카데미 ",
       "periodEnd": "May 2012",
       "organisation": "교육 이수",
-      "experience": "It was nice to be a part of Scouting.Arranged camps,hikes and awareness rallies.",
+      "experience": "<ul><li>온라인 게임 통합 프로그래밍 개발자 양성과정 교육이수.</li><li>DirectX,API,Unreal등의 기술을 배우고 게임 프로그래밍의 기초를 쌓아올림</li></ul>",
       "type": "education"
     },
     {
@@ -367,7 +367,7 @@
       "periodStart": "2017년 2월 졸업",
       "periodEnd": "",
       "organisation": "전공 공부",
-      "experience": "Learnt how to organize professional events and actvites, how to manage resources and make most out of everything.",
+      "experience": "<ul><li>소프트웨어와 하드웨어 양쪽의 지식을 가져아하는 로봇이라는 전공을 교육</li><li>C언어,C++,C#,Arduino 등의 기술을 배워왔으면 졸업작품을 만들기 위해서 VR과 Unity를 공부함</li></ul>",
       "type": "education"
     },
     {
@@ -376,7 +376,7 @@
       "periodStart": "2016년 12월",
       "periodEnd": "",
       "organisation": "수상",
-      "experience": "<ul><li>VR과 모션 시뮬레이터를 이용한 4D 자전거 주행 시뮬레이션 개발</li><li>한이음 멘토링을 하면서 작품을 개발하다 전시 작품으로 입선하여 공모전에 출품을 하였다.</li><li>VR기술을 그래픽이 아닌 실제 영상과 접목시키려고 한 시도가 높게 평가되어 미래과학부장관상을 받았다.</li></ul>",
+      "experience": "<ul><li>VR과 모션 시뮬레이터를 이용한 4D 자전거 주행 시뮬레이션 개발</li><li>한이음 멘토링을 하면서 작품을 개발하다 전시 작품으로 입선하여 공모전에 출품</li><li>VR기술을 그래픽이 아닌 실제 영상과 접목시키려고 한 시도가 높게 평가되어 미래과학부장관상을 받았다.</li></ul>",
       "type": "medal"
     },
     {
@@ -385,7 +385,7 @@
       "periodStart": "2016년 11월",
       "periodEnd": "",
       "organisation": "수상",
-      "experience": "<ul><li>VR과 모션 시뮬레이터를 이용한 4D 자전거 주행 시뮬레이션 개발</li><li>목원대학교에서 시행한 캡스톤 디자인 대회에서 작품을 강연하고 금상을 수상받았다.</li></ul>",
+      "experience": "<ul><li>VR과 모션 시뮬레이터를 이용한 4D 자전거 주행 시뮬레이션 개발</li><li>목원대학교에서 시행한 캡스톤 디자인 대회에서 작품을 강연하고 금상을 수상</li></ul>",
       "type": "medal"
     },
     {
@@ -395,7 +395,7 @@
       "periodStart": "2015년 12월",
       "periodEnd": "",
       "organisation": "수상",
-      "experience": "<ul><li>작업 능력 향상을 위한 악력 증강 글러브 개발</li><li>경기도 재활공학서비스 연구지원센터에서 시행한 장애인 보조기구 공모전에 입선해서 장애인분들께 시연하였다.</li></ul>",
+      "experience": "<ul><li>작업 능력 향상을 위한 악력 증강 글러브 개발</li><li>경기도 재활공학서비스 연구지원센터에서 시행한 장애인 보조기구 공모전에 입선해서 장애인분들께 시연</li></ul>",
       "type": "medal"
     },
     {
@@ -415,7 +415,7 @@
       "periodStart": "2012년 11월",
       "periodEnd": "",
       "organisation": "수상",
-      "experience": "<ul><li>음성 및 얼굴 영상을 이용한 간병 로봇과 신체장애자의 상호작용 시스템 개발</li><li>한이음 멘토링을 하면서 작품을 개발하다 전시 작품으로 입선하여 공모전에 출품을 하였다.</li></ul>",
+      "experience": "<ul><li>음성 및 얼굴 영상을 이용한 간병 로봇과 신체장애자의 상호작용 시스템 개발</li><li>한이음 멘토링을 하면서 작품을 개발하다 전시 작품으로 입선하여 공모전에 출품</li></ul>",
       "type": "medal"
     }
   ],
