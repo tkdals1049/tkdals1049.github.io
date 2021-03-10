@@ -154,7 +154,8 @@ function onWindowResize(){
 	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
 	
 	tabs[0].style.height = tabContentHeight;
-	$('#pagea').css('width',100);
+	$('#pagea').css('width',500);
+	$('#pageb').css('width',window.innerWidth-500);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -199,7 +200,7 @@ $('#Says').html(SaysInnerHtml);
 
 swal({
 	title: "Hello World!!!",
-	text: "에러터짐."
+	text: "에러터짐 진짜로."
 });
 
 $.get("js/profile.json", 
