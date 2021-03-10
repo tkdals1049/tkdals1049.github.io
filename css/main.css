@@ -20,11 +20,6 @@ div.content {
 	font-weight: bold;
 }
 
-#contact{
-	
-	text-align: center;
-}
-
 .title{
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -152,6 +147,9 @@ object{
 	margin: 1%;
 }
 
+#contact{
+	text-align: center;
+}
 
 #skills{
 	text-align: center;
