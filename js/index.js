@@ -154,8 +154,8 @@ function onWindowResize(){
 	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
 	
 	tabs[0].style.height = tabContentHeight;
-	$('#pagea').css('width',320);
-	$('#pageb').css('width',window.innerWidth-320);
+	$('#pagea').css('width',360);
+	$('#pageb').css('width',window.innerWidth-360);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
