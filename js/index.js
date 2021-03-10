@@ -155,7 +155,7 @@ function onWindowResize(){
 	
 	tabs[0].style.height = tabContentHeight;
 	$('#pagea').css('width',400);
-	$('#pageb').css('width',window.innerWidth-400);
+	$('#pageb').css('width',window.innerWidth-380);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -227,17 +227,8 @@ function(data, status){
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
-		<li class="tab col s3"><a href="#education">Education</a></li>
+		<li class="tab col s3"><a href="#education">Board</a></li>
 	`);
-	
-	// $('#believe').html('<h4>I believe</h4><span></span>');
-	// const typed = new Typed('#believe span', {
-	// 	strings: profile.qoutes,
-	// 	typeSpeed: 40,
-	// 	cursorChar:"_",
-	// 	loop:false
-	// });
-	// loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 
