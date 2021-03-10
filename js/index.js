@@ -155,8 +155,6 @@ function onWindowResize(){
 
 	$('#pagea').css('width',400);
 	$('#pageb').css('width',window.innerWidth-380);
-	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-	$('#image img').css('height',$('#image img').css('width'));
 }
 
 $(window).resize(onWindowResize);
