@@ -155,7 +155,6 @@ function onWindowResize(){
 	
 	tabs[0].style.height = tabContentHeight;
 	$('#pagea').css('width',100);
-
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -197,6 +196,11 @@ const SaysInnerHtml = `<div class="col m6">
 </div>`;
 $('#Says').html(SaysInnerHtml);
 }
+
+swal({
+	title: "Hello World!!!",
+	text: "에러터짐."
+});
 
 $.get("js/profile.json", 
 function(data, status){
