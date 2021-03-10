@@ -151,9 +151,8 @@ function onWindowResize(){
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
 	
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
-	
 	tabs[0].style.height = tabContentHeight;
+
 	$('#pagea').css('width',400);
 	$('#pageb').css('width',window.innerWidth-380);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
