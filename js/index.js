@@ -149,11 +149,11 @@ onWindowResize();
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
-	
+	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	console.log(`${tabs[0].style.height } to ${tabContentHeight}`);
-	
-	tabs[0].style.height = tabContentHeight;
+	if (tabs && tabs[0]) {
+		tabs[0].style.height = tabContentHeight;
+	}
 	$('#pagea').css('width',400);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
@@ -197,6 +197,10 @@ const SaysInnerHtml = `<div class="col m6">
 $('#Says').html(SaysInnerHtml);
 }
 
+swal({
+	title: "Hello World!!!",
+	text: "26 테스트."
+});
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
@@ -226,7 +230,7 @@ function(data, status){
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
-		<li class="tab col s3"><a href="#education">Education</a></li>
+		<li class="tab col s3"><a href="#education">Board</a></li>
 	`);
 	
 	// $('#believe').html('<h4>I believe</h4><span></span>');
