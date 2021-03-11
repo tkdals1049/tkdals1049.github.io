@@ -197,10 +197,6 @@ const SaysInnerHtml = `<div class="col m6">
 $('#Says').html(SaysInnerHtml);
 }
 
-swal({
-	title: "Hello World!!!",
-	text: "26 테스트."
-});
 $.get("js/profile.json", 
 function(data, status){
 	console.log('Got profile:',data,' \nwith status:',status);
@@ -250,6 +246,5 @@ function(data, status){
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
-		<li class="tab col s3"><a href="#education">Board</a></li>
 	`);
 });
