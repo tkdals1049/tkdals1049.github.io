@@ -222,6 +222,12 @@ function(data, status){
 		cursorChar:"_",
 		loop:false
 	});
+	$('#tabs').html(`					
+		<li class="tab col s2"><a href="#hello">Hello</a></li>
+		<li class="tab col s2"><a href="#skills">Skills</a></li>
+		<li class="tab col s2"><a href="#projects">Projects</a></li>
+		<li class="tab col s3"><a href="#experience">Experience</a></li>
+	`);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
@@ -232,10 +238,4 @@ function(data, status){
 
 	loadProjects(profile.projects);
 	loadPics(profile.pics);
-	$('#tabs').html(`					
-		<li class="tab col s2"><a href="#hello">Hello</a></li>
-		<li class="tab col s2"><a href="#skills">Skills</a></li>
-		<li class="tab col s2"><a href="#projects">Projects</a></li>
-		<li class="tab col s3"><a href="#experience">Experience</a></li>
-	`);
 });
