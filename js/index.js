@@ -223,23 +223,13 @@ function(data, status){
 		loop:false
 	});
 	
-	// $('#believe').html('<h4>I believe</h4><span></span>');
-	// const typed = new Typed('#believe span', {
-	// 	strings: profile.qoutes,
-	// 	typeSpeed: 40,
-	// 	cursorChar:"_",
-	// 	loop:false
-	// });
-	// loadLikes(profile.likes);
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
-
 	loadSkills(profile.skills);
 	loadWorks(profile.experince);
-	loadEducations(profile.educations);
 	loadSays();
-	console.log('body loaded calling');
 	onBodyLoad();
+
 	loadProjects(profile.projects);
 	loadPics(profile.pics);
 	$('#tabs').html(`					
