@@ -152,10 +152,8 @@ function onWindowResize(){
 	
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
-		tabs[0].style.height = tabContentHeight;
+		tabs[0].style.height = tabContentHeight
 	}
-	$('#pagea').css('width',400);
-	$('#pageb').css('width',window.innerWidth-400);
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
@@ -228,6 +226,8 @@ function(data, status){
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
 	`);
+	$('#pagea').css('width',400);
+	$('#pageb').css('width',window.innerWidth-400);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
