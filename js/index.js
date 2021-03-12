@@ -4,10 +4,9 @@ function loadSkills(skills){
 	while(i<skills.length){
 
 		var row = '<div class="row">';
-		for(j=i;j<i+6&&j<skills.length;j++){
-			var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
+		for(i=0;i<skills.length;i++){
+			var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[i].icon+'"></path></svg>'+skills[i].name+'</div>';
 			row+=skill;
-			
 		}
 		row+='</div>';
 		skillsInnerHTML+=row;
@@ -36,7 +35,9 @@ for(i=0;i<projects.length;i++){
 	if(projects[i].link!="#") tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a>';
 	tags+='</div>';
 	project+=tags;
-	project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo+'</div></div>';
+	project+='</div><div class="col m6 s12 details">';
+	if(projects[i].icon!="#") project+='<img src="img/'+projects[i].icon+'"></br>';
+	project+=projects[i].shortInfo+'</div></div>';
 	projectsInnerHTML+=project;
 }
 $('#projects').html(projectsInnerHTML);
@@ -47,7 +48,7 @@ experince.sort(function(a,b){
 	return a.sn-b.sn;
 });
 var i;
-var works = experince.filter((experince)=>experince.type=="work");
+var works = experince;
 var worksInnerHTML = '';
 for(i=0;i<works.length;i++){
 	worksInnerHTML+=`
@@ -55,7 +56,7 @@ for(i=0;i<works.length;i++){
 		<div class="row title">
 			<a href="${works[i].link}">${works[i].organisation}</a> |
 			${works[i].workPosition} |
-			${works[i].periodStart} - ${works[i].periodEnd}
+			${works[i].periodStart} 
 		</div>
 		<hr/>
 		<div class="row details">
@@ -70,7 +71,7 @@ function loadEducations(educations){
 var i=0,j;
 var educationsInnerHTML = '';
 for(i=0;i<educations.length;i++){
-	education = '<div class="row education"><div class="col m6 s12">					<div class="row title">'+educations[i].course+'<hr></div><div class="row">'+educations[i].periodStart+'-'+educations[i].periodEnd+'</div><div class="row">'+educations[i].inst+'</div><div class="row">'+educations[i].board+'</div>		<div class="row">Scored: '+educations[i].score+'</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
+	education = '<div class="row education"><div class="col m6 s12"><div class="row title">'+educations[i].course+'<hr></div><div class="row">'+educations[i].periodStart+'-'+educations[i].periodEnd+'</div><div class="row">'+educations[i].inst+'</div><div class="row">'+educations[i].board+'</div>		<div class="row">Scored: '+educations[i].score+'</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
 	var courses = educations[i].courses;
 	courses.sort(function(a,b){
 		return a.sn-b.sn;
@@ -109,7 +110,9 @@ function loadLikes(likes){
 	});
 	var i;
 	var likesInnerHTML = '<h4>I like</h4>';
-
+	for(i=0;i<likes.length;i++){
+		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
+	}
 	$('#likes').html(likesInnerHTML);
 }
 
@@ -118,14 +121,15 @@ function loadPics(pics)
 	pics = pics.sort(function(a,b){
 		return a.sn-b.sn;
 	});
-
 	var i;
-	var picsInnerHTML = '<h4>My Pics</h4>';
-	for(i=0;i<pics.length;i++){
-		picsInnerHTML+='<img type="image/jpeg" data="img/'+pics[i].icon+'">'+pics[i].name+'</object>';
-	}
+	var row = '<h4>My Pics</h4>';
 	
-	$('#pics').html(picsInnerHTML);
+	for(i=0;i<pics.length;i++){
+		row+='<img src="img/'+pics[i].icon+'" alt="이미지"/>';
+	}
+	//$('#pics').html('<h4>My Pic</h4><p><img src="img/pic1.jpg" alt="이미지" width="280px" /></p>');
+
+	$('#pics').html(row);
 }
 
 function loadBlog() {
@@ -145,10 +149,10 @@ onWindowResize();
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
 	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 50)) + 'px';
-	console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
-		tabs[0].style.height = tabContentHeight;
+		tabs[0].style.height = tabContentHeight
 	}
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
@@ -221,18 +225,16 @@ function(data, status){
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
-		<li class="tab col s3"><a href="#education">Education</a></li>
+		<li class="tab col s3"><a href="#board">Borad</a></li>
 	`);
 	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);
-	loadProjects(profile.projects);
 	loadWorks(profile.experince);
-	loadEducations(profile.educations);
 	loadSays();
-	console.log('body loaded calling');
 	onBodyLoad();
 
+	loadProjects(profile.projects);
 	loadPics(profile.pics);
 });
