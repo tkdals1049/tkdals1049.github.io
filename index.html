@@ -45,7 +45,14 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-144249374-1');
 		</script>
-
+		<script>
+		if (self.name != 'reload') {
+			self.name = 'reload';
+			self.location.reload(true);
+		}
+		else self.name = '';
+		</script>
+		
 		<base target="_blank" rel="noopener noreferrer">
 
 		<link rel="shortcut icon" type="image/png" href="/img/favicon.ico"/>
@@ -86,29 +93,27 @@
 							</div>
 						</div>
 						<div class="col m6 s12">
+							<!-- <div id="believe" class="row">
+							</div> -->
 							<div id="pics" class="row">
 							</div>
+							<!-- <div id="likes" class="row">
+							</div> -->
 						</div>
 					</div>
+					<!-- Please support by not removing this section-->
 					<div id="Says" class="row">
 					</div>
 				</div>
 				<div id="skills" class="info col m12 s12"></div>
 				<div id="projects" class="info col m12 s12 "></div>
 				<div id="experience" class="info col m12 s12"></div>
-				<div id="education" class="info col m12 s12"></div>	
-				<div id="board" class="info col m12 s12">
-					{% endfor %}
-					우효
-				</div>		
+				<div id="education" class="info col m12 s12"></div>		
 			</div>
 		</div>
 		<div class="progress">
 			<div class="indeterminate"></div>
 		</div>
 	</body>
-    <!-- Scripts: popper, bootstrap, theme, lunr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="js/index.js"></script>
 </html>
