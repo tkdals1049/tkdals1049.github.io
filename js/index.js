@@ -228,6 +228,8 @@ function(data, status){
 		<li class="tab col s3"><a href="#board">Borad</a></li>
 	`);
 	
+	$('#board').html('pInfo.mname');
+	
 	$('#helloText').html(profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);
