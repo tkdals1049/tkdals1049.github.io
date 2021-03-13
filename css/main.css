@@ -210,7 +210,8 @@ a{
 }
 
 body{
-	background-size: cover;
+	
+	height:  500;
 	padding: 50px 200px 10px;
 	background-color: #111111;
 	color: white;
