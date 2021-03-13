@@ -211,9 +211,6 @@ a{
 
 body{
     background-size: cover;
-    height: 100%;
-    min-height: 300px;
-    min-width:80%;
 	background-color: #111111;
 	color: white;
 	font-family: "Lekton", monospace;
