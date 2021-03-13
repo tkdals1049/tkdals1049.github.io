@@ -210,8 +210,9 @@ a{
 }
 
 body{
-    height: 1000px;
-    width: 1000px;
+    height: 2700px;
+    width: 900px;
+	padding: 100px 100px 0px;
 	background-color: #111111;
 	color: white;
 	font-family: "Lekton", monospace;
