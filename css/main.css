@@ -211,6 +211,7 @@ a{
 
 body{
     background-size: cover;
+	height : 50%;
     min-height: 300px;
     min-width:80%;
 	background-color: #111111;
