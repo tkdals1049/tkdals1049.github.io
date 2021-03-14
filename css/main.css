@@ -155,6 +155,11 @@ object{
 #skills{
 	text-align: center;
 	font-size: 10px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#skills::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
 }
 
 #believe{

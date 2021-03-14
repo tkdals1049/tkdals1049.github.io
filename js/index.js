@@ -225,7 +225,7 @@ function(data, status){
 		<li class="tab col s2"><a href="#skills">Skills</a></li>
 		<li class="tab col s2"><a href="#projects">Projects</a></li>
 		<li class="tab col s3"><a href="#experience">Experience</a></li>
-		<li class="tab col s3"><a href="#board" style="overflow::hidden">Borad</a></li>
+		<li class="tab col s3"><a href="#board">Borad</a></li>
 	`);
 	
 	$('#helloText').html(profile.helloText);
