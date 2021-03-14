@@ -165,7 +165,7 @@ var profile;
 function loadSays() {
 const SaysInnerHtml = `<div class="col m6">
 	<h6>Recipe for this website:</h6>	
-	<div class="row">
+	<div class="row"> 
 	이 블로그는 Github Page를 이용해서 만든 블로그 포트폴리오입니다.
 	기존에 이용하던 블로그는 툴을 이용해 제작한 블로그이기에 삭제하고
 	프로그래머로써 직접 제작하고자 만들어보았습니다.
