@@ -230,7 +230,7 @@ function(data, status){
 		<li class="tab col s3"><a href="#board">Borad</a></li>
 	`);
 	
-	$('#helloText').html('<h4>My Pics</h4>'+profile.helloText);
+	$('#helloText').html('<h4>My Introduction</h4>'+profile.helloText);
 	loadLinks(profile.profileLinks);
 	loadSkills(profile.skills);
 	loadWorks(profile.experince);
