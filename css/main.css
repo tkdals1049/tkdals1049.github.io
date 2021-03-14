@@ -26,7 +26,9 @@ canvas{
 	padding: 50px 120px 10px;
 	z-index: 2;
 	font-size: 15px;
-    position: relative;
+    position: absolute;
+	top:0;
+	left:0;
 }
 
 div.content {
