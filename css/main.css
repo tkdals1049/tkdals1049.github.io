@@ -10,17 +10,23 @@ html, body{
 	background-color: #111111;
 	color: white;
 	font-family: "Lekton", monospace;
-	font-size: 14px;
+	font-size: 15px;
 	font-display: auto;
 }
 canvas{
     background-color: #000;
 }
 
+#back-page{
+	z-index: 1;
+}
+
 #home-page{
 	background-size: cover;
 	padding: 50px 120px 10px;
+	z-index: 2;
 }
+
 div.content {
 	display: none;
 }
@@ -178,6 +184,7 @@ object{
 #skills{
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+	text-align: center;
 }
 #skills::-webkit-scrollbar {
 display: none; /* Chrome, Safari, Opera*/
