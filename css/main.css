@@ -260,8 +260,6 @@ a{
 }
 
 body{
-	background-size: cover;
-	padding: 50px 120px 10px;
 	background-color: #111111;
 	color: white;
 	font-family: "Lekton", monospace;
