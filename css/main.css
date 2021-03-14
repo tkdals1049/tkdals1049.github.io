@@ -25,6 +25,7 @@ canvas{
 	background-size: cover;
 	padding: 50px 120px 10px;
 	z-index: 2;
+	font-size: 18px;
 }
 
 div.content {
