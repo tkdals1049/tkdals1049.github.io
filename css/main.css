@@ -13,6 +13,10 @@ canvas{
     background-color: #000;
 }
 
+#home-page{
+	background-size: cover;
+	padding: 50px 120px 10px;
+}
 div.content {
 	display: none;
 }
