@@ -1,6 +1,3 @@
----
-layout: null
----
 <!DOCTYPE html>
 <html>
 	<head>
@@ -73,17 +70,10 @@ layout: null
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-		<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
-		<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 
-		
 	</head>
 	<body>
-		<iframe src="https://tkdals1049.github.io/blog" style="width:90%" height="500" scrolling="auto">
-		</iframe>
-		<iframe src="https://tkdals1049.github.io/" style="width:90%" height="500" scrolling="auto">
-		</iframe>
 		<div class="row content">
 			<div id="pagea" class="page col m3 s12">
 				<div class="row"><h1 id="blogname" class="center-align"></h1></div>
@@ -113,30 +103,7 @@ layout: null
 				<div id="experience" class="info col m12 s12"></div>
 				<div id="education" class="info col m12 s12"></div>	
 				<div id="board" class="info col m12 s12">
-					{{site.baseurl}}{{latest_post.url}}
-					{% if 1 %}
-					우효?
-                	{% endif %} 
-					<section class="recent-posts">
-
-						<div class="section-title">
-							<h2><span>Stories</span></h2>
-						</div>
-					
-						<div class="row listrecent">
-							{% for post in paginator.posts %}
-							{% include postbox.html %}
-							{% endfor %}
-						</div>
-					
-					</section>
-					<div class="bottompagination">
-						<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-						<span class="navigation" role="navigation">
-							{% include pagination.html %}
-						</span>
-					</div>
-					<iframe src="http://tkdals1049.github.io"></iframe>
+					<iframe src="https://tkdals1049.github.io/blog" style="width:90%" height="500" scrolling="auto"></iframe>
 				</div>		
 			</div>
 		</div>
