@@ -10,7 +10,7 @@ html, body{
 	background-color: #111111;
 	color: white;
 	font-family: "Lekton", monospace;
-	font-size: 1.15rem;
+	font-size: 14px;
 	font-display: auto;
 }
 canvas{
