@@ -19,7 +19,8 @@ canvas{
 
 #back-page{
 	position:fixed;
-	top:0px;
+	top:0px; 
+	left:0px;
 	z-index: 1;
 }
 
