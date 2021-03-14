@@ -161,6 +161,33 @@ object{
 #skills::-webkit-scrollbar {
 display: none; /* Chrome, Safari, Opera*/
 }
+#hello{
+	text-align: center;
+	font-size: 10px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#hello::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
+}
+#projects{
+	text-align: center;
+	font-size: 10px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#projects::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
+}
+#experience{
+	text-align: center;
+	font-size: 10px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#experience::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
+}
 
 #believe{
 	height: 10em;
