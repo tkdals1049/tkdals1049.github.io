@@ -18,6 +18,8 @@ canvas{
 }
 
 #back-page{
+	position:fixed;
+	top:0px;
 	z-index: 1;
 }
 
