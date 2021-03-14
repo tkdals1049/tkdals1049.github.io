@@ -14,15 +14,12 @@ html, body{
 	font-display: auto;
 }
 canvas{
-    background-color: #000;
-}
-
-#back-page{
 	position:fixed;
 	top:0px; 
 	left:0px;
 	z-index: 1;
 }
+
 
 #home-page{
 	background-size: cover;
