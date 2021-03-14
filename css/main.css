@@ -16,17 +16,17 @@ html, body{
 }
 
 #back-page{
-	position:fixed;
-	top:0px; 
-	left:0px;
-	z-index: 1;
+	z-index: 0;
 }
 
 #home-page{
 	background-size: cover;
 	padding: 100px 120px 100px;
-	z-index: -1;
-	font-size: 15px;
+	z-index: 1;
+
+	position:fixed;
+	top:0px; 
+	left:0px;
 }
 
 div.content {
