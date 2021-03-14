@@ -1,3 +1,26 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #111111;
+	color: white;
+	font-family: "Lekton", monospace;
+	font-size: 1.15rem;
+	font-display: auto;
+}
+canvas{
+    background-color: #000;
+}
+
+#home-page{
+	background-size: cover;
+	padding: 50px 120px 10px;
+}
 div.content {
 	display: none;
 }
@@ -238,16 +261,6 @@ a{
 
 .tabs .indicator{
 	background-color: white;
-}
-
-body{
-	background-size: cover;
-	padding: 50px 120px 10px;
-	background-color: #111111;
-	color: white;
-	font-family: "Lekton", monospace;
-	font-size: 1.15rem;
-	font-display: auto;
 }
 
 h6 {
