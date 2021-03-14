@@ -13,13 +13,13 @@ html, body{
 	font-size: 15px;
 	font-display: auto;
 }
-canvas{
+
+#back-page{
 	position:fixed;
-	top:0px; 
+	top:100px; 
 	left:0px;
 	z-index: 1;
 }
-
 
 #home-page{
 	background-size: cover;
