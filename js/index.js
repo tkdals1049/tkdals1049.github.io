@@ -7,7 +7,7 @@ function loadSkills(skills){
 
 		var row = '<div class="row">';
 		for(i=0;i<skills.length;i++){
-			var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[i].icon+'"></path></svg>'+skills[i].name+'</div>';
+			var skill = '<div class="col m2"><svg viewBox="0 0 100 100"><path d="'+skills[i].icon+'"></path></svg>'+skills[i].name+'</div>';
 			row+=skill;
 		}
 		row+='</div>';
