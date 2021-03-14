@@ -160,6 +160,15 @@ object{
 #believe{
 	height: 10em;
 }
+#board{
+	text-align: center;
+	font-size: 10px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#board::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
+}
 
 #skills svg path{
 	fill: rgba(255,255,255,1);
