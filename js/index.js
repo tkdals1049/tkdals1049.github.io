@@ -150,7 +150,7 @@ onWindowResize();
 
 function onWindowResize(){
 	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 150)) + 'px';
+	const tabContentHeight = Math.max(heightPageA-40,(window.innerHeight - 200)) + 'px';
 	
 	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
 	if (tabs && tabs[0]) {
