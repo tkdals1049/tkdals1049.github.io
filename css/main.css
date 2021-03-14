@@ -153,8 +153,6 @@ object{
 }
 
 #skills{
-	text-align: center;
-	font-size: 10px;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -162,8 +160,6 @@ object{
 display: none; /* Chrome, Safari, Opera*/
 }
 #hello{
-	text-align: center;
-	font-size: 10px;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -171,8 +167,6 @@ display: none; /* Chrome, Safari, Opera*/
 display: none; /* Chrome, Safari, Opera*/
 }
 #projects{
-	text-align: center;
-	font-size: 10px;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -180,8 +174,6 @@ display: none; /* Chrome, Safari, Opera*/
 display: none; /* Chrome, Safari, Opera*/
 }
 #experience{
-	text-align: center;
-	font-size: 10px;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
@@ -193,8 +185,6 @@ display: none; /* Chrome, Safari, Opera*/
 	height: 10em;
 }
 #board{
-	text-align: center;
-	font-size: 10px;
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
