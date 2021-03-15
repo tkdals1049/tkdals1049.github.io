@@ -730,7 +730,7 @@ var SEPARATION = 150,
         document.body.appendChild(container);
  
         camera = new THREE.PerspectiveCamera(120, window.innerWidth / window.innerHeight, 1, 10000);
-        camera.position.z = 1000;
+        camera.position.z = 100;
  
         scene = new THREE.Scene();
  
