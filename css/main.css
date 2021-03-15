@@ -19,8 +19,9 @@ canvas {
 }
 
 #home-page{
-	padding: 100px 120px 10px;
-	z-index: 1;
+	background-size: cover;
+	padding: 50px 120px 10px;
+	z-index: 2;
 }
 
 div.content {
