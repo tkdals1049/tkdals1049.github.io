@@ -140,8 +140,8 @@ function updateBalls(){
     Array.prototype.forEach.call(balls, function(b){
         b.x += b.vx;
         b.y += b.vy;
-        
-        if(b.x > -(50) && b.x < (can_w+50) && b.y > -(50) && b.y < (can_h+50)){
+        var count =10;
+        if(b.x > -(count) && b.x < (can_w+count) && b.y > -(count) && b.y < (can_h+count)){
            new_balls.push(b);
         }
         
