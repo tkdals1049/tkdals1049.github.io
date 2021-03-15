@@ -707,16 +707,16 @@ fragmentShader:"uniform vec3 color;\nuniform sampler2D map;\nuniform float opaci
 
 
 var SEPARATION = 100,
-        AMOUNTX = 50,
-        AMOUNTY = 50;
+        AMOUNTX = 25,
+        AMOUNTY = 25;
  
     var container;
     var camera, scene, renderer;
  
     var particles, particle, count = 0;
  
-    var mouseX = 85,
-        mouseY = -342;
+    var mouseX = 0,
+        mouseY = 0;
  
     var windowHalfX = window.innerWidth / 2;
     var windowHalfY = window.innerHeight / 2;
