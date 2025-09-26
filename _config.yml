@@ -28,7 +28,7 @@ google_site_verification:
 
 theme_mode: # [dark|light]
 
-img_cdn:   "https://tkdals1049.github.io/"  
+img_cdn: "https://tkdals1049.github.io/"  
 avatar: "assets/img/favicons/favicon.ico"
 toc: true
 
