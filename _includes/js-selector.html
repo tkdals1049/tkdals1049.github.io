@@ -65,7 +65,7 @@
     {% assign js = 'commons' %}
 {% endcase %}
 assets\js\dist
-{% capture script %}https://tkdals1049.github.io/assets/js/dist/{{ js }}.min.js{% endcapture %}
+{% capture script %} {{ site.url }}/assets/js/dist/{{ js }}.min.js{% endcapture %}
 <script defer src="{{ script | relative_url }}"></script>
 
 {% if page.math %}
