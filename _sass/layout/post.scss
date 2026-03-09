@@ -228,6 +228,7 @@ h1 + .post-meta {
   .post-navigation {
     .btn,
     .btn::before {
+      transition: all 0.35s ease-in-out;
     }
   }
 }
