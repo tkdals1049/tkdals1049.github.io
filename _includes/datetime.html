@@ -4,7 +4,7 @@
 -->
 
 {% assign wrap_elem = include.wrap | default: 'em' %}
-{% assign df_strftime = site.data.locales[include.lang].df.post.strftime | default: '%d/%m/%Y' %}
+{% assign df_strftime = site.data.locales[include.lang].df.post.strftime | default: '%Y/%m/%d' %}
 {% assign df_dayjs = site.data.locales[include.lang].df.post.dayjs | default: 'YYYY/MM/DD' %}
 
 <{{ wrap_elem }}
